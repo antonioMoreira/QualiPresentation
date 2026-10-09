@@ -1,0 +1,1598 @@
+@article{whisperX,
+  title={WhisperX: Time-Accurate Speech Transcription of Long-Form Audio},
+  author={Bain, Max and Huh, Jaesung and Han, Tengda and Zisserman, Andrew},
+  journal={INTERSPEECH 2023},
+  year={2023},
+  pages = {4489-4493},
+  doi= {10.21437/Interspeech.2023-78}
+}
+
+
+%EyetrackingMOS
+@inproceedings{EyetrackingMOS,
+ author = {Gustavo Araújo and Julio Galdino and Rodrigo Lima and Leonardo Ishida and Gustavo Lopes and Miguel Oliveira Jr. and Arnaldo Cândido Jr. and Sandra Aluísio and Moacir Ponti},
+ title = { EyetrackingMOS: Proposta de um método de avaliação online para modelos de síntese de fala},
+ booktitle = {Anais do XV Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana},
+ location = {Belém/PA},
+ year = {2024},
+ keywords = {},
+ issn = {0000-0000},
+ pages = {87--96},
+ publisher = {SBC},
+ address = {Porto Alegre, RS, Brasil},
+ doi = {10.5753/stil.2024.245424},
+ url = {https://sol.sbc.org.br/index.php/stil/article/view/31120}
+}
+
+
+
+%YourTTS
+@inproceedings{casanova2022yourtts,
+  title={YourTTS: Towards Zero-Shot Multi-Speaker TTS and Zero-Shot Voice Conversion for Everyone},
+  author={Casanova, Edresson and Weber, Julian and Shulby, Christopher D and Cândido Junior, Arnaldo and Gölge, Eren and Ponti, Moacir A},
+  booktitle={International Conference on Machine Learning},
+  pages={2711--2725},
+  year={2022},
+  organization={PMLR}
+}
+
+% TACOTRON 2
+@inproceedings{shen2018natural,
+  title={Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions},
+  author={Shen, Jonathan and Pang, Ruoming and Weiss, Ron J. and Schuster, Mike and Jaitly, Navdeep and Yang, Zongwei and Chen, Zhifeng and Zhang, Yuan and Wang, Yuxuan and Skerry-Ryan, R. and others},
+  booktitle={2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={4779--4783},
+  year={2018},
+  organization={IEEE},
+  doi={10.1109/ICASSP.2018.8461368}
+}
+
+%Syntacc
+@inproceedings{nguyen2023syntacc,
+  author    = {Nguyen, Tuan-Nam and Pham, Ngoc-Quan and Waibel, Alex},
+  title     = {SYNTACC: Synthesizing Multi-Accent Speech By Weight Factorization},
+  booktitle = {ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages     = {1--5},
+  year      = {2023},
+  organization={IEEE},
+  doi       = {10.1109/ICASSP49357.2023.10096431}
+}
+
+
+% Referencias dos 3 modelos de TTS context-aware
+% Covomix - context-aware
+
+
+
+@inproceedings{CoVoMix_2024,
+author = {Zhang, Leying and Qian, Yao and Zhou, Long and Liu, Shujie and Wang, Dongmei and Wang, Xiaofei and Yousefi, Midia and Qian, Yanmin and Li, Jinyu and He, Lei and Zhao, Sheng and Zeng, Michael},
+title = {CoVoMix: advancing zero-shot speech generation for human-like multi-talker conversations},
+year = {2024},
+isbn = {9798331314385},
+publisher = {Curran Associates Inc.},
+address = {Red Hook, NY, USA},
+abstract = {Recent advancements in zero-shot text-to-speech (TTS) modeling have led to significant strides in generating high-fidelity and diverse speech. However, dialogue generation, along with achieving human-like naturalness in speech, continues to be a challenge. In this paper, we introduce CoVoMix: Conversational Voice Mixture Generation, a novel model for zero-shot, human-like, multi-speaker, multi-round dialogue speech generation. CoVoMix first converts dialogue text into multiple streams of discrete tokens, with each token stream representing semantic information for individual talkers. These token streams are then fed into a flow-matching based acoustic model to generate mixed mel-spectrograms. Finally, the speech waveforms are produced using a HiFi-GAN model. Furthermore, we devise a comprehensive set of metrics for measuring the effectiveness of dialogue modeling and generation. Our experimental results show that CoVoMix can generate dialogues that are not only human-like in their naturalness and coherence but also involve multiple talkers engaging in multiple rounds of conversation. This is exemplified by instances generated in a single channel where one speaker's utterance is seamlessly mixed with another's interjections or laughter, indicating the latter's role as an attentive listener. Audio samples are available at https://aka.ms/covomix.},
+booktitle = {Proceedings of the 38th International Conference on Neural Information Processing Systems, (NeurIPS 2024)},
+articleno = {3183},
+numpages = {27},
+location = {Vancouver, BC, Canada},
+series = {NIPS '24}
+}
+
+% JoyVoice - ontext-aware
+
+@misc{yu2025joyvoicelongcontextconditioninganthropomorphic,
+      title={JoyVoice: Long-Context Conditioning for Anthropomorphic Multi-Speaker Conversational Synthesis}, 
+      author={Fan Yu and Tao Wang and You Wu and Lin Zhu and Wei Deng and Weisheng Han and Wenchao Wang and Lin Hu and Xiangyu Liang and Xiaodong He and Yankun Huang and Yu Gu and Yuan Liu and Yuxuan Wang and Zhangyu Xiao and Ziteng Wang and Boya Dong and Feng Dang and Jinming Chen and Jingdong Li and Jun Wang and Yechen Jin and Yuan Zhang and Zhengyan Sheng and Xin Wang},
+      year={2025},
+      eprint={2512.19090},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2512.19090}, 
+}
+
+% VoxCPM - context-aware
+@misc{zhou2025voxcpmtokenizerfreettscontextaware,
+      title={VoxCPM: Tokenizer-Free TTS for Context-Aware Speech Generation and True-to-Life Voice Cloning}, 
+      author={Yixuan Zhou and Guoyang Zeng and Xin Liu and Xiang Li and Renjie Yu and Ziyang Wang and Runchuan Ye and Weiyue Sun and Jiancheng Gui and Kehan Li and Zhiyong Wu and Zhiyuan Liu},
+      year={2025},
+      eprint={2509.24650},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2509.24650}, 
+}
+
+
+
+% DiDiSpeech: A Large Scale Mandarin Speech Corpus - DEVERIA ESTAR NA REVISÃO da Literatura
+@INPROCEEDINGS{Didispeech_2021,
+  author={Guo, Tingwei and Wen, Cheng and Jiang, Dongwei and Luo, Ne and Zhang, Ruixiong and Zhao, Shuaijiang and Li, Wubo and Gong, Cheng and Zou, Wei and Han, Kun and Li, Xiangang},
+  booktitle={ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Didispeech: A Large Scale Mandarin Speech Corpus}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={6968-6972},
+  keywords={Conferences;Industry applications;Signal processing;Acoustics;Acceleration;Task analysis;Speech processing;Mandarin speech corpus;voice conversion;text-to-speech;speech recognition},
+  doi={10.1109/ICASSP39728.2021.9414423}}
+
+% Fischer dataset
+@inproceedings{cieri-etal-2004-fisher,
+    title = "The Fisher Corpus: a Resource for the Next Generations of Speech-to-Text",
+    author = "Cieri, Christopher  and
+      Miller, David  and
+      Walker, Kevin",
+    editor = "Lino, Maria Teresa  and
+      Xavier, Maria Francisca  and
+      Ferreira, F{\'a}tima  and
+      Costa, Rute  and
+      Silva, Raquel",
+    booktitle = "Proceedings of the Fourth International Conference on Language Resources and Evaluation ({LREC}{'}04)",
+    month = may,
+    year = "2004",
+    address = "Lisbon, Portugal",
+    publisher = "European Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/L04-1500/"
+}
+
+% Emilia dataset
+@ARTICLE{Emilia_2025,
+  author={He, Haorui and Shang, Zengqiang and Wang, Chaoren and Li, Xuyuan and Gu, Yicheng and Hua, Hua and Liu, Liwei and Yang, Chen and Li, Jiaqi and Shi, Peiyang and Wang, Yuancheng and Chen, Kai and Zhang, Pengyuan and Wu, Zhizheng},
+  journal={IEEE Transactions on Audio, Speech and Language Processing}, 
+  title={Emilia: A Large-Scale, Extensive, Multilingual, and Diverse Dataset for Speech Generation}, 
+  year={2025},
+  volume={33},
+  number={},
+  pages={4044-4054},
+  keywords={Speech processing;Training;Pipelines;Multilingual;Data models;Speech;Source separation;Voice activity detection;Standardization;Data mining;In-the-wild speech generation dataset},
+  doi={10.1109/TASLPRO.2025.3612835}}
+
+% REFS atuais de CONVERSACIONAL CONTEXT-AWARE TTS
+% Para a REF1: unified context-aware TTS framework called UniCATS, which is capable of both speech continuation and editing.
+%https://arxiv.org/abs/2306.07547
+% Para a REF2: Cite o próprio DailyTalk
+% Para a REF3: https://aclanthology.org/2025.findings-naacl.38/
+
+@inproceedings{UniCATS_2024,
+author = {Du, Chenpeng and Guo, Yiwei and Shen, Feiyu and Liu, Zhijun and Liang, Zheng and Chen, Xie and Wang, Shuai and Zhang, Hui and Yu, Kai},
+title = {UniCATS: a unified context-aware text-to-speech framework with contextual VQ-diffusion and vocoding},
+year = {2024},
+isbn = {978-1-57735-887-9},
+publisher = {AAAI Press},
+url = {https://doi.org/10.1609/aaai.v38i16.29747},
+doi = {10.1609/aaai.v38i16.29747},
+abstract = {The utilization of discrete speech tokens, divided into semantic tokens and acoustic tokens, has been proven superior to traditional acoustic feature mel-spectrograms in terms of naturalness and robustness for text-to-speech (TTS) synthesis. Recent popular models, such as VALL-E and SPEAR-TTS, allow zero-shot speaker adaptation through auto-regressive (AR) continuation of acoustic tokens extracted from a short speech prompt. However, these AR models are restricted to generate speech only in a left-to-right direction, making them unsuitable for speech editing where both preceding and following contexts are provided. Furthermore, these models rely on acoustic tokens, which have audio quality limitations imposed by the performance of audio codec models. In this study, we propose a unified context-aware TTS framework called UniC ATS, which is capable of both speech continuation and editing. UniCATS comprises two components, an acoustic model CTX-txt2vec and a vocoder CTX-vec2wav. CTX-txt2vec employs contextual VQ-diffusion to predict semantic tokens from the input text, enabling it to incorporate the semantic context and maintain seamless concatenation with the surrounding context. Following that, CTX-vec2wav utilizes contextual vocoding to convert these semantic tokens into waveforms, taking into consideration the acoustic context. Our experimental results demonstrate that CTX-vec2wav outperforms HifiGAN and AudioLM in terms of speech resynthesis from semantic tokens. Moreover, we show that UniCATS achieves state-of-the-art performance in both speech continuation and editing. Audio samples are available at https://cpdu.github.io/unicats.},
+booktitle = {Proceedings of the Thirty-Eighth AAAI Conference on Artificial Intelligence and Thirty-Sixth Conference on Innovative Applications of Artificial Intelligence and Fourteenth Symposium on Educational Advances in Artificial Intelligence},
+articleno = {1999},
+numpages = {9},
+series = {AAAI'24/IAAI'24/EAAI'24}
+}
+
+% EDSS
+@inproceedings{edss_2025,
+    title = "Prompt-Guided Selective Masking Loss for Context-Aware Emotive Text-to-Speech",
+    author = "Jeon, Yejin  and
+      Kim, Youngjae  and
+      Lee, Jihyun  and
+      Lee, Gary",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-naacl.38/",
+    doi = "10.18653/v1/2025.findings-naacl.38",
+    pages = "638--650",
+    ISBN = "979-8-89176-195-7",
+    abstract = "Emotional dialogue speech synthesis (EDSS) aims to generate expressive speech by leveraging the dialogue context between interlocutors. This is typically done by concatenating global representations of previous utterances as conditions for text-to-speech (TTS) systems. However, such approaches overlook the importance of integrating localized acoustic cues that convey emotion. To address this, we introduce a novel approach that utilizes a large language model (LLM) to generate holistic emotion tags based on prior dialogue context, while also pinpointing key words in the target utterance that align with the predicted emotional state. Furthermore, we enhance the emotional richness of synthesized speech by incorporating concentrated acoustic features of these key words through a novel selective audio masking loss function. This methodology not only improves emotional expressiveness, but also facilitates automatic emotion speech generation during inference by eliminating the need for manual emotion tag selection. Comprehensive subjective and objective evaluations and analyses demonstrate the effectiveness of the proposed approach."
+}
+
+
+% Refs para Conversacional TTS (MAIS ANTIGOS)
+
+
+@inproceedings{guo2021conversational,
+  title={Conversational End-to-End TTS for Voice Agents},
+  author={Guo, Haohan and Zhang, Shaofei and Soong, Frank K and He, Lei and Xie, Lei},
+  booktitle={2021 IEEE Spoken Language Technology Workshop (SLT)},
+  pages={403--409},
+  year={2021},
+  organization={IEEE}
+}
+
+@inproceedings{yan21d_interspeech,
+  title     = {{Adaptive Text to Speech for Spontaneous Style}},
+  author    = {Yuzi Yan and Xu Tan and Bohan Li and Guangyan Zhang and Tao Qin and Sheng Zhao and Yuan Shen and Wei-Qiang Zhang and Tie-Yan Liu},
+  year      = {2021},
+  booktitle = {{Interspeech 2021}},
+  pages     = {4668--4672},
+  doi       = {10.21437/Interspeech.2021-584},
+  issn      = {2958-1796},
+}
+
+@ARTICLE{paratts_2022,
+  author={Xue, Liumeng and Soong, Frank K. and Zhang, Shaofei and Xie, Lei},
+  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing}, 
+  title={ParaTTS: Learning Linguistic and Prosodic Cross-Sentence Information in Paragraph-Based TTS}, 
+  year={2022},
+  volume={30},
+  number={},
+  pages={2854-2864},
+  keywords={Linguistics;Speech synthesis;Hidden Markov models;Feature extraction;Context modeling;Training;Acoustics;Cross-sentence;long-form;speech synthesis;text-to-speech (TTS)},
+  doi={10.1109/TASLP.2022.3202126}}
+
+% Dataset conversacional aberto, mas com noise
+@inproceedings{poria-etal-2019-meld,
+    title = "{MELD}: A Multimodal Multi-Party Dataset for Emotion Recognition in Conversations",
+    author = "Poria, Soujanya  and
+      Hazarika, Devamanyu  and
+      Majumder, Navonil  and
+      Naik, Gautam  and
+      Cambria, Erik  and
+      Mihalcea, Rada",
+    editor = "Korhonen, Anna  and
+      Traum, David  and
+      M{\`a}rquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1050/",
+    doi = "10.18653/v1/P19-1050",
+    pages = "527--536",
+    abstract = "Emotion recognition in conversations is a challenging task that has recently gained popularity due to its potential applications. Until now, however, a large-scale multimodal multi-party emotional conversational database containing more than two speakers per dialogue was missing. Thus, we propose the Multimodal EmotionLines Dataset (MELD), an extension and enhancement of EmotionLines. MELD contains about 13,000 utterances from 1,433 dialogues from the TV-series Friends. Each utterance is annotated with emotion and sentiment labels, and encompasses audio, visual and textual modalities. We propose several strong multimodal baselines and show the importance of contextual and multimodal information for emotion recognition in conversations. The full dataset is available for use at \url{http://affective-meld.github.io}."
+}
+
+
+% MuPe para ASR
+@inproceedings{evaldo-leal-etal-2025-mupe,
+    title = "{M}u{P}e Life Stories Dataset: Spontaneous Speech in {B}razilian {P}ortuguese with a Case Study Evaluation on {ASR} Bias against Speakers Groups and Topic Modeling",
+    author = "Evaldo Leal, Sidney  and
+      Candido Junior, Arnaldo  and
+      Marcacini, Ricardo  and
+      Casanova, Edresson  and
+      Gon{\c{c}}alves, Odilon  and
+      Silva Soares, Anderson  and
+      Freitas Lima, Rodrigo  and
+      Stefanel Gris, Lucas Rafael  and
+      Alu{\'i}sio, Sandra",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.407/",
+    pages = "6076--6087",
+    abstract = "Recently, several public datasets for automatic speech recognition (ASR) in Brazilian Portuguese (BP) have been released, improving ASR systems performance. However, these datasets lack diversity in terms of age groups, regional accents, and education levels. In this paper, we present a new publicly available dataset consisting of 289 life story interviews (365 hours), featuring a broad range of speakers varying in age, education, and regional accents. First, we demonstrated the presence of bias in current BP ASR models concerning education levels and age groups. Second, we showed that our dataset helps mitigate these biases. Additionally, an ASR model trained on our dataset performed better during evaluation on a diverse test set. Finally, the ASR model trained with our dataset was extrinsically evaluated through a topic modeling task that utilized the automatically transcribed output."
+}
+
+% MUPE para TTS
+@inproceedings{eniac2024,
+ author = {Julio Galdino and Gustavo Araújo and Arnaldo Candido Junior and Miguel Oliveira Jr. and Moacir Ponti and Sandra Aluísio},
+ title = { Acoustic Analysis of Prosodic Features in Natural versus Synthesized Speech Samples from YourTTS and SYNTACC Models},
+ booktitle = {Anais do XXI Encontro Nacional de Inteligência Artificial e Computacional},
+ location = {Belém/PA},
+ year = {2024},
+ keywords = {},
+ issn = {2763-9061},
+ pages = {304--315},
+ publisher = {SBC},
+ address = {Porto Alegre, RS, Brasil},
+ doi = {10.5753/eniac.2024.245092},
+ url = {https://sol.sbc.org.br/index.php/eniac/article/view/33803}
+}
+
+% DailyTalk
+
+@INPROCEEDINGS{Lee_2023,
+  author={Lee, Keon and Park, Kyumin and Kim, Daeyoung},
+  booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={DailyTalk: Spoken Dialogue Dataset for Conversational Text-to-Speech}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Measurement;Codes;Oral communication;Signal processing;Acoustics;Cultural differences;Speech processing;Text-to-Speech (TTS);conversational TTS;TTS dataset;dialogue},
+  doi={10.1109/ICASSP49357.2023.10095751}
+  }
+
+
+
+% Parser Palavras
+@book{bick2000parsing,
+  title={The Parsing System "Palavras": Automatic Grammatical Analysis of Portuguese in a Constraint Grammar Framework},
+  author={Bick, E.},
+  isbn={9788772889108},
+  lccn={00465728},
+  url={https://books.google.com.br/books?id=8ukIzwEACAAJ},
+  year={2000},
+  publisher={Aarhus University Press}
+}
+
+% Projeto CORAA-ASR
+
+@article{2023coraa,
+  title={{CORAA ASR}: a large corpus of spontaneous and prepared speech manually validated for speech recognition in Brazilian Portuguese},
+  author={Candido Junior, Arnaldo and Casanova, Edresson and Soares, Anderson and de Oliveira, Frederico Santos and Oliveira, Lucas and Junior, Ricardo Corso Fernandes and da Silva, Daniel Peixoto Pinto and Fayet, Fernando Gorgulho and Carlotto, Bruno Baldissera and Gris, Lucas Rafael Stefanel and others},
+  journal={Language Resources and Evaluation},
+  volume={57},
+  number={3},
+  pages={1139--1171},
+  year={2023},
+  publisher={Springer}
+}
+
+% Projeto NURC
+
+@ARTICLE{Castilho_2021, 
+    title={Gramática do Português Brasileiro: fundamentos, perspectivas}, 
+    volume={2}, 
+    DOI={10.25189/2675-4916.2021.v2.n1.id252}, 
+    number={1}, 
+    journal={Cadernos de Linguística}, 
+    author={Castilho, Ataliba Teixeira de}, 
+    year={2021}, 
+    month={Apr.}, 
+    pages={e252} 
+}
+
+% NURC-SP
+@inproceedings{rodrigues-etal-2024-portal,
+    title = "Portal {NURC}-{SP}: Design, Development, and Speech Processing Corpora Resources to Support the Public Dissemination of {P}ortuguese Spoken Language",
+    author = "Rodrigues, Ana Carolina  and
+      Macedo, Alessandra A.  and
+      Jr, Arnaldo Candido  and
+      Svartman, Flaviane R. F.  and
+      Craveiro, Giovana M.  and
+      Leite, Marli Quadros  and
+      Alu{\'i}sio, Sandra M.  and
+      Santos, Vin{\'i}cius G.  and
+      Garcia, Vin{\'i}cius M.",
+    editor = "Gamallo, Pablo  and
+      Claro, Daniela  and
+      Teixeira, Ant{\'o}nio  and
+      Real, Livy  and
+      Garcia, Marcos  and
+      Oliveira, Hugo Gon{\c{c}}alo  and
+      Amaro, Raquel",
+    booktitle = "Proceedings of the 16th International Conference on Computational Processing of Portuguese - Vol. 1",
+    month = mar,
+    year = "2024",
+    address = "Santiago de Compostela, Galicia/Spain",
+    publisher = "Association for Computational Lingustics",
+    url = "https://aclanthology.org/2024.propor-1.19/",
+    pages = "187--195"
+}
+
+% NURC-Recife
+@article{Oliveira_2016, 
+title={NURC Digital Um protocolo para a digitalização, anotação, arquivamento e disseminação do material do Projeto da Norma Urbana Linguística Culta (NURC)}, 
+volume={3}, 
+url={https://revistas.uam.es/chimera/article/view/6519}, 
+number={2}, 
+journal={CHIMERA: Revista de Corpus de Lenguas Romances y Estudios Lingüísticos}, author={Oliviera Jr., Miguel}, 
+year={2016}, 
+month={sep.}, 
+pages={149-174} 
+}
+
+% Teoria de segmentação do C-Oral
+@inproceedings{raso-etal-2012,
+    title = "Transcrição e segmentação prosódica do corpus {C}-{ORAL}-{BRASIL}: critérios de implementação e validação",
+    author = "Mello, Heliana  and Mittmann, Maryual{\^e} Malvessi and Vale, H. P. and Cortes, P.O.",
+    booktitle = "CORAL-BRASIL I: corpus de referência do português brasileiro falado informal",
+    month = may,
+    year = "2012",
+    editor="Raso, T. and Mello, H.",
+    publisher="Editora UFMG"
+}
+
+% CM do NURC-SP
+@inproceedings{Santos_etal_2022,
+  title        = {{CORAA NURC-SP Minimal Corpus}: a manually annotated corpus of {B}razilian {P}ortuguese spontaneous speech},
+  author       = {Santos, Vinícius G. and Caroline Adriane Alves and Bruno Baldissera Carlotto and Bruno Angelo Papa Dias and Lucas Rafael Stefanel Gris and Renan de Lima Izaias and Maria Luiza Azevedo de Morais and Paula Marin de Oliveira and Rafael Sicoli and Flaviane Romani Fernandes-Svartman and Marli Quadros Leite and Sandra Maria Aluísio},
+  year         = 2022,
+  booktitle    = {Proc.\ {IberSPEECH} 2022},
+  pages        = {161--165},
+  doi          = {10.21437/IberSPEECH.2022-33}
+}
+
+
+%Audio Corpus
+@inproceedings{2024nurcsp,
+  title={A large dataset of spontaneous speech with the accent spoken in {S}{\~a}o {P}aulo for automatic speech recognition evaluation},
+  author={Lima, Rodrigo and Leal, Sidney E and Junior, Arnaldo Candido and Alu{\'\i}sio, Sandra M},
+  booktitle={Brazilian Conference on Intelligent Systems},
+  pages={33--47},
+  year={2024},
+  organization={Springer}
+}
+
+
+@inproceedings{crowdmos,
+  author={Ribeiro, Flávio and Florêncio, Dinei and Zhang, Cha and Seltzer, Michael},
+  booktitle={2011 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={CROWDMOS: An approach for crowdsourcing mean opinion score studies}, 
+  year={2011},
+  volume={},
+  number={},
+  pages={2416-2419},
+  keywords={Headphones;Laboratories;Speech;Reactive power;Manganese;Hardware;Throughput;crowdsourcing;subjective quality;mean opinion score;MOS;MUSHRA;mechanical turk;crowdMOS},
+  doi={10.1109/ICASSP.2011.5946971}
+}
+
+% Artigo que fala das métricas MOS, CMOS 
+@inproceedings{kirkland23_ssw,
+title     = {{Stuck in the MOS pit: A critical analysis of MOS test methodology in TTS evaluation}},
+  author    = {Ambika Kirkland and Shivam Mehta and Harm Lameris and Gustav Eje Henter and Eva Szekely and Joakim Gustafson},
+  year      = {2023},
+  booktitle = {{12th ISCA Speech Synthesis Workshop (SSW2023)}},
+  pages     = {41--47},
+  doi       = {10.21437/SSW.2023-7},
+}
+
+% FastSpeech 2 - Microsoft
+
+@inproceedings{FastSpeech2,
+  title={FastSpeech 2: Fast and High-Quality End-to-End Text to Speech},
+  author={Ren, Yi and Hu, Chenxu and Tan, Xu and Qin, Tao and Zhao, Sheng and Zhao, Zhou and Liu, Tie-Yan},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2021},
+  url={https://openreview.net/forum?id=piLPYqxtWuA}
+}
+
+%MFA
+@inproceedings{mcauliffe17_interspeech,
+  title     = {{Montreal Forced Aligner: Trainable Text-Speech Alignment Using Kaldi}},
+  author    = {Michael McAuliffe and Michaela Socolof and Sarah Mihuc and Michael Wagner and Morgan Sonderegger},
+  year      = {2017},
+  booktitle = {{Interspeech 2017}},
+  pages     = {498--502},
+  doi       = {10.21437/Interspeech.2017-1386},
+  issn      = {2958-1796},
+}
+
+%CTC-based aligner
+@INPROCEEDINGS{Badlani2022,
+  author={Badlani, Rohan and Łańcucki, Adrian and Shih, Kevin J. and Valle, Rafael and Ping, Wei and Catanzaro, Bryan},
+  booktitle={ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={One TTS Alignment to Rule Them All}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={6092-6096},
+  keywords={Training;Viterbi algorithm;Conferences;Pipelines;Signal processing algorithms;Signal processing;Robustness;neural speech synthesis;speech text alignments},
+  doi={10.1109/ICASSP43922.2022.9747707}}
+
+%conversacional agents
+@INPROCEEDINGS{Guo2021,
+  author={Guo, Haohan and Zhang, Shaofei and Soong, Frank K. and He, Lei and Xie, Lei},
+  booktitle={2021 IEEE Spoken Language Technology Workshop (SLT)}, 
+  title={Conversational End-to-End TTS for Voice Agents}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={403-409},
+  keywords={Conferences;Semantics;Buildings;Syntactics;Speech;Speech synthesis;Data mining;Text-to-Speech;End-to-End;Conversational TTS;Speech Corpus;Voice Agent},
+  doi={10.1109/SLT48900.2021.9383460}}
+
+
+%DailyDialog
+@inproceedings{li-etal-2017-dailydialog,
+    title = "{D}aily{D}ialog: A Manually Labelled Multi-turn Dialogue Dataset",
+    author = "Li, Yanran  and
+      Su, Hui  and
+      Shen, Xiaoyu  and
+      Li, Wenjie  and
+      Cao, Ziqiang  and
+      Niu, Shuzi",
+    editor = "Kondrak, Greg  and
+      Watanabe, Taro",
+    booktitle = "Proceedings of the Eighth International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = nov,
+    year = "2017",
+    address = "Taipei, Taiwan",
+    publisher = "Asian Federation of Natural Language Processing",
+    url = "https://aclanthology.org/I17-1099/",
+    pages = "986--995",
+    abstract = "We develop a high-quality multi-turn dialog dataset, \textbf{DailyDialog}, which is intriguing in several aspects. The language is human-written and less noisy. The dialogues in the dataset reflect our daily communication way and cover various topics about our daily life. We also manually label the developed dataset with communication intention and emotion information. Then, we evaluate existing approaches on DailyDialog dataset and hope it benefit the research field of dialog systems. The dataset is available on \url{http://yanran.li/dailydialog}"
+}
+
+%VCTK
+@inproceedings{Yamagishi2019CSTRVC,
+  title={CSTR VCTK Corpus: English Multi-speaker Corpus for CSTR Voice Cloning Toolkit (version 0.92)},
+  author={Junichi Yamagishi and Christophe Veaux and Kirsten MacDonald},
+  year={2019},
+  url={https://api.semanticscholar.org/CorpusID:213060286}
+}
+
+%LJSPEAK
+@misc{ljspeech17,
+  author = {Ito, Keith and Johnson, Linda},
+  title = {The LJ Speech Dataset},
+  year = {2017},
+  howpublished = {\url{https://keithito.com/LJ-Speech-Dataset/}},
+  note = {Accessed: [Insert Date Here]}
+}
+
+
+
+% Tacotron2
+@misc{Tacotron2,
+      title={Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions}, 
+      author={Jonathan Shen and Ruoming Pang and Ron J. Weiss and Mike Schuster and Navdeep Jaitly and Zongheng Yang and Zhifeng Chen and Yu Zhang and Yuxuan Wang and RJ Skerry-Ryan and Rif A. Saurous and Yannis Agiomyrgiannakis and Yonghui Wu},
+      year={2018},
+      eprint={1712.05884},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/1712.05884}, 
+}
+
+% MagicData-RAMC
+@inproceedings{magicdata-ramc,
+  title     = {{Open Source MagicData-RAMC: A Rich Annotated Mandarin Conversational(RAMC) Speech Dataset}},
+  author    = {Zehui Yang and Yifan Chen and Lei Luo and Runyan Yang and Lingxuan Ye and Gaofeng Cheng and Ji Xu and Yaohui Jin and Qingqing Zhang and Pengyuan Zhang and Lei Xie and Yonghong Yan},
+  year      = {2022},
+  booktitle = {{Interspeech 2022}},
+  pages     = {1736--1740},
+  doi       = {10.21437/Interspeech.2022-729},
+  issn      = {2958-1796},
+}
+
+@article{scikit-learn,
+  title={Scikit-learn: Machine Learning in {P}ython},
+  author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+          and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+          and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+          Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+  journal={Journal of Machine Learning Research},
+  volume={12},
+  pages={2825--2830},
+  year={2011}
+}
+
+@inproceedings{radford23_whisper,
+  title = 	 {Robust Speech Recognition via Large-Scale Weak Supervision},
+  author =       {Radford, Alec and Kim, Jong Wook and Xu, Tao and Brockman, Greg and Mcleavey, Christine and Sutskever, Ilya},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {28492--28518},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of the 40th International Conference on Machine
+Learning},
+  month = 	 {Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/radford23a/radford23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/radford23a.html},
+  abstract = 	 {We study the capabilities of speech processing systems trained simply to predict large amounts of transcripts of audio on the internet. When scaled to 680,000 hours of multilingual and multitask supervision, the resulting models generalize well to standard benchmarks and are often competitive with prior fully supervised results without the need for any dataset specific fine-tuning. When compared to humans, the models approach their accuracy and robustness. We are releasing models and inference code to serve as a foundation for further work on robust speech processing.}
+}
+
+
+@article{martins_netto_2022,
+  title={Variações entoacionais em narrativas populares: análises preliminares da codificação do contexto}, 
+  author={Martins, M. V. M. and Netto, W. F.},
+  journal={Leitura},
+  volume={72},
+  year={2022},
+  month={Abril},
+  pages = {118–134},
+  doi= {10.28998/2317-9945.202272.118-134}
+}
+
+@book{Raso_Mello_2012,
+  title        = {{C-ORAL--BRASIL I}: corpus de referência do português brasileiro falado informal},
+  author       = {Tommaso Raso and Heliana Mello},
+  year         = 2012,
+  publisher    = {Editora UFMG},
+  address      = {Belo Horizonte},
+  note         = {332 p. : il + 1 DVD-ROM}
+}
+
+
+% PRAAT 
+
+@misc{Boersma_Weenink_2023,
+  title        = {Praat: doing phonetics by computer [{C}omputer program]. {V}ersion 6.3.10},
+  author       = {Boersma, Paul and Weenink, David},
+  year         = 2023,
+  url          = {http://www.praat.org/}
+}
+
+% ROLL ET AL. USAR NA REVISÃO DA LITERATURA
+@misc{roll2023psst,
+      title={PSST! Prosodic Speech Segmentation with Transformers}, 
+      author={Nathan Roll and Calbert Graham and Simon Todd},
+      year={2023},
+      eprint={2302.01984},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+% MONTREAL BIRON 
+
+@inproceedings{mcauliffe2017montreal,
+  title={Montreal forced aligner: Trainable text-speech alignment using kaldi.},
+  author={McAuliffe, Michael and Socolof, Michaela and Mihuc, Sarah and Wagner, Michael and Sonderegger, Morgan},
+  booktitle={Interspeech},
+  volume={2017},
+  pages={498--502},
+  year={2017}
+}
+
+% HOI ET AL - USAR PARA REVISÃO DA LITERATURA
+@INPROCEEDINGS{Hoi_2022,
+  author={Hoi, Lap Man and Sun, Yuqi and Im, Sio Kei},
+  booktitle={2022 IEEE World AI IoT Congress (AIIoT)}, 
+  title={An Automatic Speech Segmentation Algorithm of Portuguese based on Spectrogram Windowing}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={290-295},
+  doi={10.1109/AIIoT54504.2022.9817299}}
+
+% kocharov - USAR NA REVISÃO DA LITERATURA
+
+@InProceedings{kocharov17_interspeech,
+author="Daniil Kocharov 
+and Tatiana Kachkovskaia 
+and Pavel Skrelin",
+title="Eliciting Meaningful Units from Speech",
+year=2017,
+booktitle="Proc. Interspeech 2017",
+pages="2128--2132",
+doi="10.21437/Interspeech.2017-855",
+abstract="Elicitation of information structure from speech is a crucial step in automatic speech understanding. In terms of both production and perception, we consider intonational phrase to be the basic meaningful unit of information structure in speech. The current paper presents a method of detecting these units in speech by processing both the recorded speech and its textual representation. Using syntactic information, we split text into small groups of words closely connected with each other. Assuming that intonational phrases are built from these small groups, we use acoustic information to reveal their actual boundaries. The procedure was initially developed for processing Russian speech, and we have achieved the best published results for this language with F1 equal to 0.91. We assume that it may be adapted for other languages that have some amount of read speech resources, including under-resourced languages. For comparison we have evaluated it on English material (Boston University Radio Speech Corpus). Our results, F1 of 0.76, are comparable with the top systems designed for English."
+}
+
+
+% datasets/corpus
+
+@InProceedings{CORPRES_2010,
+author="Skrelin, Pavel
+and Volskaya, Nina
+and Kocharov, Daniil
+and Evgrafova, Karina
+and Glotova, Olga
+and Evdokimova, Vera",
+editor="Sojka, Petr
+and Hor{\'a}k, Ale{\v{s}}
+and Kope{\v{c}}ek, Ivan
+and Pala, Karel",
+title="CORPRES",
+booktitle="Text, Speech and Dialogue",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="392--399",
+abstract="The paper introduces CORPRES - COrpus of Russian Professionally REad Speech developed at the Department of Phonetics, Saint Petersburg State University, as a result of a three-year project. The corpus includes samples of different speaking styles produced by 4 male and 4 female speakers. Six levels of annotation cover all phonetic and prosodic information about the recorded speech data, including labels for pitch marks, phonetic events, phonetic, orthographic and prosodic transcription. Precise phonetic transcription of the data provides an especially valuable resource for both research and development purposes. Overall corpus size is 60 hours of speech. The paper contains information about CORPRES design and annotation principles, and overall data description. Also, we discuss possible use of the corpus in phonetic research and speech technology as well as some findings on the Russian sound system obtained from the corpus data.",
+isbn="978-3-642-15760-8"
+}
+
+% ufpalign 
+
+@article{Batista22a,
+		author     = {Batista, Cassio and Dias, Ana Larissa and Neto, Nelson},
+		title      = {Free resources for forced phonetic alignment in Brazilian Portuguese based on Kaldi toolkit},
+		journal    = {EURASIP Journal on Advances in Signal Processing},
+		year       = {2022},
+		month      = {2},
+		day        = {19},
+		volume     = {2022},
+		number     = {1},
+		pages      = {11},
+		issn       = {1687-6180},
+		doi        = {10.1186/s13634-022-00844-9},
+		url        = {https://doi.org/10.1186/s13634-022-00844-9}
+}
+
+
+% RASO 2020 - UTILIZAR NA REVISÃO DA LITERATURA PORÉM CHECAR SE É ESSE MESMO O CERTO OU PEGAR A RASO DE OUTRO ANO --- devo citar todos, abaixo seguem os 2 de 2020
+
+@article{Raso_Teixeira_Barbosa_2020,
+  title        = {Modelling automatic detection of prosodic boundaries for {B}razilian {P}ortuguese spontaneous speech},
+  author       = {Raso, Tommaso and Teixeira, Bárbara and Barbosa, Plínio},
+  year         = 2020,
+  month        = {September},
+  journal      = {Journal of Speech Sciences},
+  volume       = 9,
+  pages        = {105--128},
+  doi          = {10.20396/joss.v9i00.14957},
+  url          = {https://doi.org/10.20396/joss.v9i00.14957},
+  place        = {Campinas, SP}
+}
+
+@article{teixeira2020detecccao,
+  title={Detec{\c{c}}{\~a}o autom{\'a}tica de fronteiras pros{\'o}dicas entre unidades entonacionais},
+  author={Teixeira, B{\'a}rbara and Raso, Tommaso and Barbosa, Pl{\'\i}nio Almeida},
+  journal={Gradus: Revista Brasileira de Fonologia de Laborat{\'o}rio},
+  year={2020},
+  publisher={Universidade Federal de Minas Gerais}
+}
+
+
+% BIRON
+@article{Biron_etal_2021,
+  title        = {Automatic detection of prosodic boundaries in spontaneous speech},
+  author       = {Tirza Biron and Daniel Baum and Dominik Freche and Nadav Matalon and Netanel Ehrmann and Eyal Weinreb and David Biron and Elisha Moses},
+  year         = 2021,
+  month        = {May},
+  journal      = {PLoS ONE},
+  publisher    = {Public Library of Science},
+  volume       = 16,
+  number       = 5,
+  pages        = {1--21},
+  doi          = {10.1371/journal.pone.0250969}
+}
+
+% 3 REFERÊNCIAS AO NURC SP EXTRAÍDAS DO SITE TARSILA
+
+@inproceedings{portalNURCSP,
+    author = {Rodrigues, Ana Carolina and Macedo, Alessandra A. and Junior, Arnaldo Candido and Svartman, Flaviane R. F. and Craveiro, Giovana M. and Leite, Marli Quadros and Aluísio, Sandra M. and G. Santos, Vinícius and Garcia, Vinícius M.},
+    title = {Portal NURC-SP: Design, Development, and Speech Processing Tools to Support the Public Dissemination of Portuguese Spoken Language},
+    booktitle={Computational Processing of the Portuguese Language: 16th International Conference, PROPOR 2024},
+    year = {2024},
+    pages={to appear}
+}
+
+@inproceedings{simplefastpropor,
+    author = {Craveiro, Giovana M. and Santos, Vinícius G. and Dalalana G. J. P. and Svartman, Flaviane R. F. and Aluísio, Sandra M.},
+    title = {Simple and Fast Automatic Prosodic Segmentation of Brazilian Portuguese Spontaneous Speech},
+    booktitle={Computational Processing of the Portuguese Language: 16th International Conference, PROPOR 2024},
+    pages={to appear},
+    year = {2024}
+}
+
+% acoustic analysis
+
+@ARTICLE{mel1,
+  author={Abdul, Zrar Kh. and Al-Talabani, Abdulbasit K.},
+  journal={IEEE Access}, 
+  title={Mel Frequency Cepstral Coefficient and its Applications: A Review}, 
+  year={2022},
+  volume={10},
+  number={},
+  pages={122136-122158},
+  doi={10.1109/ACCESS.2022.3223444}}
+
+@ARTICLE{mel2,
+  author={Godino-Llorente, J.I. and Gomez-Vilda, P.},
+  journal={IEEE Transactions on Biomedical Engineering}, 
+  title={Automatic detection of voice impairments by means of short-term cepstral parameters and neural network based detectors}, 
+  year={2004},
+  volume={51},
+  number={2},
+  pages={380-384},
+  doi={10.1109/TBME.2003.820386}}
+
+
+
+
+@inproceedings{santos2022coraa,
+  title={CORAA NURCSP Minimal Corpus: a manually annotated corpus of Brazilian Portuguese spontaneous speech},
+  author={Santos, Vin{\i}cius G and Alves, Caroline and Carlotto, Bruno and Dias, Bruno and Gris, Lucas and Izaias, Renan and Morais, Maria Luiza and Oliveira, Paula and Sicoli, Rafael and Svartman, Flaviane R Fernandes and others},
+  booktitle={6th International Conference on Speech and Language Technologies on Iberian languages, IberSPEECH},
+  year={2022}
+}
+
+@article{gris2022bringing,
+  title={Bringing NURC/SP to digital life: the role of open-source automatic speech recognition models},
+  author={Gris, Lucas Rafael Stefanel and Junior, Arnaldo Candido and Santos, Vin{\'\i}cius G dos and Dias, Bruno A Papa and Leite, Marli Quadros and Svartman, Flaviane Romani Fernandes and Alu{\'\i}sio, Sandra},
+  journal={arXiv preprint arXiv:2210.07852},
+  year={2022}
+}
+
+% SER
+
+@INPROCEEDINGS{liu_2007,
+  author={Liu, Yang and Shriberg, Elizabeth},
+  booktitle={2007 IEEE International Conference on Acoustics, Speech and Signal Processing - ICASSP '07}, 
+  title={Comparing Evaluation Metrics for Sentence Boundary Detection}, 
+  year={2007},
+  volume={4},
+  number={},
+  pages={IV-185-IV-188},
+  doi={10.1109/ICASSP.2007.367194}}
+
+
+% artigo conceitual pra intro
+@article{bigi2018automatic,
+  title={Automatic segmentation of spontaneous speech},
+  author={Bigi, Brigitte and Meunier, Christine},
+  journal={Revista de Estudos da Linguagem},
+  volume={26},
+  number={4},
+  year={2018}
+}
+
+@article{Lin2019,
+    author = {Lin, Cheng-Hsien and You, Chung-Long and Chiang, Chen-Yu and Wang, Yih-Ru and Chen, Sin-Horng},
+    title = "{Hierarchical prosody modeling for Mandarin spontaneous speech}",
+    journal = {The Journal of the Acoustical Society of America},
+    volume = {145},
+    number = {4},
+    pages = {2576-2596},
+    year = {2019},
+    month = {April},
+    abstract = "{In this paper, a hierarchical prosody model (HPM)-based method for Mandarin spontaneous speech is proposed. First, an HPM is designed for describing relations among acoustic features of utterances, linguistic features of texts, and prosodic tags representing the underlying hierarchical prosodic structures of utterances. Subsequently, a sequential optimization algorithm is employed to train the HPM based on a large conversational speech corpus, the Mandarin Conversational Dialogue Corpus (MCDC), which features orthographic transcriptions and prosodic event annotations. In this unsupervised training method, all utterances of the MCDC are labeled with two types of prosodic tags, namely, break and prosodic states, automatically and simultaneously. After training, the HPM parameters are examined to identify critical prosodic properties of Mandarin spontaneous speech, which are then compared with their counterparts in the read-speech HPM. The prosodic tags on the studied utterances enable mapping of various prosodic events onto the hierarchical prosodic structures of the utterances. Prosodic analyses of some disfluent events are conducted using the prosodic tags affixed to the MCDC. Finally, an application of the HPM to assist in Mandarin spontaneous-speech recognition is discussed. Significant relative error rate reductions of 9.0\\%, 9.2\\%, 15.6\\%, and 7.3\\% are obtained for base-syllable, character, tone, and word recognition, respectively.}",
+    issn = {0001-4966},
+    doi = {10.1121/1.5099263},
+    url = {https://doi.org/10.1121/1.5099263},
+    eprint = {https://pubs.aip.org/asa/jasa/article-pdf/145/4/2576/15339238/2576\_1\_online.pdf},
+}
+
+@inproceedings{chen04c_speechprosody,
+  author={Ken Chen and Mark Hasegawa-Johnson},
+  title={{How prosody improves word recognition}},
+  year=2004,
+  booktitle={Proc. Speech Prosody 2004},
+  pages={583--586}
+}
+
+
+@ARTICLE{Liu_2022,
+AUTHOR={Liu, Shimeng and Nakajima, Yoshitaka and Chen, Lihan and Arndt, Sophia and Kakizoe, Maki and Elliott, Mark A. and Remijn, Gerard B.},    
+TITLE={How Pause Duration Influences Impressions of English Speech: Comparison Between Native and Non-native Speakers},      
+JOURNAL={Frontiers in Psychology},     	
+VOLUME={13},           	
+YEAR={2022},      	  
+URL={https://www.frontiersin.org/articles/10.3389/fpsyg.2022.778018},       	
+DOI={10.3389/fpsyg.2022.778018},      	
+ISSN={1664-1078},   
+ABSTRACT={The purpose of this study was to investigate how the subjective impression of English speech would change when pause duration at punctuation marks was varied. Two listening experiments were performed in which written English speech segments were rated on a variety of evaluation items by both native-English speakers and non-native speakers (native-Chinese speakers and native-Japanese speakers). The ratings were then subjected to factor analysis. In the first experiment, the pauses in three segments were made into the same durations, from 0.075 to 4.8 s. Participants rated the segments on 23 evaluation items on a rating scale from 1 to 10. A varimax rotation after PCA (principal component analysis) led to two factors that were related to speech style. These two factors could be interpreted as representing speech naturalness and speech rate. Speech segments with a pause duration of 0.6 s received the highest naturalness evaluation, while perceived speech rate decreased as the physical pause duration increased, without any changes in utterance segments. In the second experiment, a full-factorial design of pause durations (0.15, 0.3, 0.6, 1.2, and 2.4 s) within and between sentences, i.e., for commas and for periods, was implemented in two speech segments. The original speech segments and speech segments without any pauses were also included as control conditions. From ratings on 12 evaluation items, similar to Experiment 1, two factors representing speech naturalness and speech rate were obtained. The results showed again that the perceived speech rate decreased with an increase only in pause duration. As for speech naturalness, the highest evaluations occurred when pause durations were 0.6 s within sentences, and either 0.6 or 1.2 s between sentences. This recommends fixing all pause durations to 0.6 s as a practical way to train non-native speakers to make their spoken English appear more natural.}
+}
+
+% referências passadas pela Sandra nos comentários - MUPE:
+
+@article{gris2023evaluating,
+  title={Evaluating OpenAI's Whisper ASR for Punctuation Prediction and Topic Modeling of life histories of the Museum of the Person},
+  author={Gris, Lucas Rafael Stefanel and Marcacini, Ricardo and Junior, Arnaldo Candido and Casanova, Edresson and Soares, Anderson and Alu{\'\i}sio, Sandra Maria},
+  journal={arXiv preprint arXiv:2305.14580},
+  year={2023}
+}
+
+%referências extraídas do artigo do propor para os trabalhos de segmentação prosódica em portuguÊs BR
+@inproceedings{Teixeira_Barbosa_Raso_2018,
+    author="Teixeira, B{\'a}rbara and Barbosa, Pl{\'i}nio and Raso, Tommaso",
+    editor="Villavicencio, Aline and Moreira, Viviane and Abad, Alberto and Caseli, Helena and Gamallo, Pablo and Ramisch, Carlos and Gon{\c{c}}alo Oliveira, Hugo and Paetzold, Gustavo Henrique",
+    title="Automatic Detection of Prosodic Boundaries in {B}razilian {P}ortuguese Spontaneous Speech",
+    booktitle="Computational Processing of the {P}ortuguese {L}anguage",
+    year="2018",
+    publisher="Springer International Publishing",
+    address="Cham",
+    pages="429--437",
+    isbn="978-3-319-99722-3"
+}
+
+
+@article{Teixeira_Mittman_2018,
+    author = {Teixeira, Bárbara Helohá Falcão and Mittman, Maryualê Malvessi},
+    title = {Acoustic Models for the Automatic Identification of Prosodic Boundaries in Spontaneous Speech},
+    journal = {Revista de Estudos da Linguagem},
+    volume = 26,
+    number = 4,
+    year = 2018,
+    pages = {1455--1488},
+    doi = {10.17851/2237-2083.26.4.1455-1488},
+    isbn = {2237-2083}
+}
+
+@misc{Mello_Raso_Ferrari_asair,
+author = {Mello, Heliana and Tommaso Raso and Lúcia de Almeida Ferrari},
+title = {{C-ORAL--Brasil II}: Corpus de referência do português brasileiro falado informal},
+year = "To appear"
+}
+
+% capítulo de ética BPLN
+
+@InCollection{BPLNetica,
+editor = {Caseli, H. M. and Nunes, M. G. V.},
+title = {Questões éticas em IA e PLN},
+chapter = {24},
+publisher = {BPLN},
+year = {2023},
+author = {Nunes, Maria das Graças Volpe and Soares, Tayane Arantes and Ferro, Mariza},
+type = {Book Chapter},
+isbn = {978-65-00-80693-9},
+booktitle = {Processamento de Linguagem Natural: Conceitos, Técnicas e Aplicações em
+Português},
+url = { https://brasileiraspln.com/livro-pln/1a-edicao/parte10/cap24/cap24.html }
+}
+
+%aihleg
+
+@book{ala2020assessment,
+  title={The assessment list for trustworthy artificial intelligence (ALTAI)},
+  author={Ala-Pietil{\"a}, Pekka and Bonnet, Yann and Bergmann, Urs and Bielikova, Maria and Bonefeld-Dahl, Cecilia and Bauer, Wilhelm and Bouarfa, Loubna and Chatila, Raja and Coeckelbergh, Mark and Dignum, Virginia and others},
+  year={2020},
+  publisher={European Commission}
+}
+
+% intro definição fronteira prosódica 
+@book{cruttenden1997intonation,
+  title={Intonation},
+  author={Cruttenden, Alan},
+  year={1997},
+  publisher={Cambridge University Press}
+}
+
+% intro definição fronteira prosódica 
+@article{duBoisDiscourse,
+title = {Discourse Transcription},
+journal={Santa Barbara papers in linguistics},
+volume={4},
+pages={1--225},
+year={1992},
+author = {du Bois, John W. and Cumming, Susanna and Schuetze-Coburn, Stephan and Paolino, Danae},
+url = { https://www.linguistics.ucsb.edu/research/santa- barbara-
+papers.}
+}
+
+% intro ToBi
+
+@inproceedings{silverman1992tobi,
+  title={ToBI: A standard for labeling English prosody.},
+  author={Silverman, Kim EA and Beckman, Mary E and Pitrelli, John F and Ostendorf, Mari and Wightman, Colin W and Price, Patti and Pierrehumbert, Janet B and Hirschberg, Julia},
+  booktitle={ICSLP},
+  volume={2},
+  pages={867--870},
+  year={1992}
+}
+
+%intro conceito fronteira prosódica
+
+@misc{pierrehumbert1980phonetics,
+  title={The phonetics and phonology of English intonation},
+  author={Pierrehumbert, Janet},
+  year={1980},
+  publisher={Cambridge, MA: MIT dissertation}
+}
+
+% intro definição fronteira prosódica 
+@article{pierrehumbert2000conceptual,
+  title={Conceptual foundations of phonology as a laboratory science},
+  author={Pierrehumbert, Janet and Beckman, Mary E and Ladd, D Robert},
+  journal={Phonological knowledge: Conceptual and empirical issues},
+  pages={273--304},
+  year={2000},
+  publisher={Oxford University Press Oxford}
+}
+
+
+% córpus santa barbara 
+@book{Dubois_etal_2000-2005,
+  title        = {{S}anta {B}arbara corpus of spoken {A}merican {E}nglish. {P}arts 1--4},
+  author       = {{du} Bois, John W. and Wallace L. Chafe and Charles Meyer and Sandra A. Thompson and Robert Englebretson and Nii Martey},
+  year         = {2000--2005},
+  publisher    = {Linguistic Data Consortium},
+  address      = {Philadelphia}
+}
+
+% córpus BURSC
+
+@misc{Ostendorf_Price_ShattuckHufnagel_1995,
+  title        = {The {B}oston {U}niversity {R}adio news corpus},
+  author       = {Ostendorf, Mari and Price, Patti and Shattuck-Hufnagel, Stefanie},
+  year         = 1995,
+  doi          = {10.35111/Z7XK-Z229},
+  url          = {https://doi.org/10.35111/Z7XK-Z229}
+}
+
+% mais um do ToBi
+
+@incollection{Beckman_Hirschberg_ShattuckHufnagel_2005,
+  title        = {The original {ToBI} system and the evolution of the {ToBI} framework},
+  author       = {Beckman, Mary E. and Julia Hirschberg and Stefanie Shattuck-Hufnagel},
+  year         = 2005,
+  booktitle    = {Prosodic typology: the phonology of intonation and phrasing},
+  publisher    = {Oxford University Press},
+  address      = {Oxford},
+  pages        = {9--54},
+  doi          = {10.1093/acprof:oso/9780199249633.003.0002},
+  url          = {https://doi.org/10.1093/acprof:oso/9780199249633.003.0002},
+  editor       = {Jun, Sun-Ah}
+}
+
+% IVIE Corpus
+
+@article{Grabe2000,
+author = {Grabe, E. and Post, Brechtje and Nolan, F.},
+year = {2001},
+month = {01},
+pages = {},
+title = {Modelling intonational Variation in English. The IViE system},
+journal = {Proceedings of Prosody 2000}
+}
+
+% aeneas
+@misc{aeneas, 
+title={Aeneas}, 
+url={https://www.readbeyond.it/aeneas/}, 
+journal={aeneas: automagically synchronize audio and text}, 
+author ={Pettarin, Alberto}, 
+year={2017}, 
+month={03}
+} 
+
+% exprosodia site
+@misc{exprosodia,
+author={Ferreira Netto, Waldemar and Martins, Marcus Vinícius Moreira and Jorge, Ana Cristina and Garcia, Rosicleide Rodrigues and Vieira, Maressa de Freitas and Bragadin, Cheila and Carreiro, Juan Costa and Padilha, Mariana Nitzschke},
+title={ExProsodia},
+year={2006},
+publisher={fflch},
+url={https://exprosodia.fflch.usp.br/publicacoes}
+}
+
+%tom médio
+@article{martins2017limiares,
+  title={Os Limiares de Diferencia{\c{c}}{\~a}o Tonal do Portugu{\^e}s Brasileiro},
+  author={Martins, Marcus Vinicius Moreira and Netto, Waldemar Ferreira},
+  journal={Revista do GEL},
+  volume={14},
+  number={2},
+  pages={157--182},
+  year={2017}
+}
+
+
+% alinha pb
+
+@article{alinhapb,
+title={Alinha-pb},
+author={Kruse, Jo{\~a}o Segato and Barbosa, Plinio Almeida},
+journal={Journal of Communication and Information Systems},
+volume={36},
+number={1},
+pages={192--199},
+year={2021},
+url= {https://jcis.sbrt.org.br/jcis/article/view/794}
+}
+
+%pauses
+@InCollection{vaissiere1983,
+author="Vaissi{\`e}re, Jacqueline",
+editor="Cutler, Anne and Ladd, D. Robert",
+title="Language-Independent Prosodic Features",
+bookTitle="Prosody: Models and Measurements",
+year="1983",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="53--66",
+abstract="The purpose of this contribution is to investigate the similarities in form and function of prosody among diverse languages. All speakers, regardless of their specific language, are equipped with the same production and perception apparatus, and consequently have the same capabilities and must face the same physiological constraints. Such similarities should be reflected in the acoustic production of any speaker. The first specific aim of this contribution is to review a number of striking acoustic similarities in the suprasegmental aspects of neutral sentences in different languages, together with possible physiological explanations for them.",
+isbn="978-3-642-69103-4",
+doi="10.1007/978-3-642-69103-4_5",
+url="https://doi.org/10.1007/978-3-642-69103-4_5"
+}
+
+% tom medio + sugerida pela sandra exprosodia
+@article{netto2020variaccoes,
+  title={Varia{\c{c}}{\~o}es entoacionais internas {\`a}s unidades de suporte pros{\'o}dico em rela{\c{c}}{\~a}o ao Tom M{\'e}dio em narrativas (Tonal direction variation within prosodic pitch support units in relation to mean pitch in narratives)},
+  author={Netto, Waldemar Ferreira},
+  journal={Estudos da L{\'\i}ngua (gem)},
+  volume={18},
+  number={2},
+  pages={5--16},
+  year={2020}
+}
+
+%exprosodia
+@misc{netto2016resultados,
+  title={Exprosodia: Resultados Preliminares},
+  author={Ferreira Netto, Waldemar},
+  year={2016},
+  publisher={S{\~a}o Paulo: Paulistana}
+}
+
+%exprosodia aplicativo
+@article{exprosodiaapp,
+    title={Exprosodia}, 
+    author={Ferreira Netto, Waldemar},
+    journal={Revista da Propriedade Industrial, Brasilia},
+    volume={2038},
+    pages={167},
+    year={2010},
+    note = {item 120},
+    month = {Out}
+}
+
+% f0 de brasileiros
+@article{russo1993percepccao,
+title={Percep{\c{c}}{\"a}o da fala: an{\'a}lise ac{\'u}stica do portugu{\^e}s brasileiro},
+author={Russo, I{\^e}da and Behlau, Mara},
+booktitle={Percep{\c{c}}{\"a}o da fala: an{\'a}lise ac{\'u}stica do portugu{\^e}s brasileiro},
+year={1993},
+journal={Lovise, São Paulo}
+}
+
+% speech filling system
+@article{huckvale2013speech,
+  title={Speech filing system},
+  author={Huckvale, Mark and others},
+  journal={Url: www. phon. ucl. ac. uk/resources/sfs},
+  year={2013}
+}
+% speech filling system
+@inproceedings{huckvale1987spar,
+  title={The SPAR speech filing system},
+  author={Huckvale, Mark A and Brookes, David Michael and Dworkin, LT and Johnson, ME and Pearce, David JB and Whitaker, LC},
+  booktitle={European Conference on Speech Technology},
+  year={1987}
+}
+
+@article{black1966study,
+  title={A study of pauses in oral reading of one's native language and English},
+  author={Black, John W and Tosi, Oscar and Singh, Sadanand and Takefuta, Yukio},
+  journal={Language and speech},
+  volume={9},
+  number={4},
+  pages={237--241},
+  year={1966},
+  publisher={Sage Publications Sage CA: Thousand Oaks, CA}
+}
+
+% f0
+@book{backstrom2020introduction,
+    title={Introduction to speech processing},
+    author={B{\"a}ckstr{\"o}m, Tom and R{\"a}s{\"a}nen, Okko and Zewoudie, Abraham and Perez Zarazaga, Pablo and Das, Sneha and others},
+    year={2020},
+    publisher = {Library of Open Educational Resources},
+    url = {https://speechprocessingbook.aalto.fi/Glossary.html}
+}
+
+% exprosodia - recomendada pela sandra
+
+@article{netto2020estrategias,
+  title={Estrat{\'e}gias de finaliza{\c{c}}{\~o}es frasais e a an{\'a}lise autom{\'a}tica da entoa{\c{c}}{\~a}o: um estudo piloto},
+  author={Netto, Waldemar Ferreira and Martins, Marcus Vinicius Moreira},
+  journal={Revista do GEL},
+  volume={17},
+  number={3},
+  pages={90--118},
+  year={2020}
+}
+
+@inproceedings{da2023towards,
+  title={Towards analysis on textual inference at ASSIN-2 dataset},
+  author={da Silva, Felipe O and Craveiro, Giovana Meloni and da Silva, Vin{\'\i}cius F and de Barros Vanzin, Vin{\'\i}cius Jo{\~a}o},
+  booktitle={Anais do XIV Simp{\'o}sio Brasileiro de Tecnologia da Informa{\c{c}}{\~a}o e da Linguagem Humana},
+  pages={229--234},
+  year={2023},
+  organization={SBC}
+}
+
+% intro desambiguação
+
+@article{izre2020search,
+  title={In Search of Basic Units of Spoken Language},
+  author={Izre'el, Shlomo and Raso, Tommaso and Panunzi, Alessandro and Mello, Heliana},
+  journal={In Search of Basic Units of Spoken Language},
+  pages={1--452},
+  year={2020},
+  publisher={John Benjamins Publishing Company}
+}
+
+% intonation unit
+
+@book{chafe1994discourse,
+  title={Discourse, consciousness, and time: The flow and displacement of conscious experience in speaking and writing},
+  author={Chafe, Wallace},
+  year={1994},
+  publisher={University of Chicago Press}
+}
+
+% unidade entoacional
+
+@article{oliviera2016nurc,
+  title={Nurc digital um protocolo para a digitaliza{\c{c}}{\~a}o, anota{\c{c}}{\~a}o, arquivamento e dissemina{\c{c}}{\~a}o do material do projeto da norma urbana lingu{\'\i}stica culta (nurc)},
+  author={Oliviera Jr, Miguel and others},
+  journal={CHIMERA: Revista de Corpus de Lenguas Romances y Estudios Ling{\"u}{\'\i}sticos},
+  volume={3},
+  number={2},
+  pages={149--174},
+  year={2016}
+}
+
+% tobi pro portugues
+
+@article{lucente2004estudo,
+  title={Estudo-Piloto de uma nota{\c{c}}{\~a}o entoacional para o portugu{\^e}s brasileiro: ToBI or not ToBI},
+  author={LUCENTE, Luciana and BARBOSA, Plinio A},
+  journal={Anais do 6{\textordmasculine} encontro CELSUL-C{\'\i}rculo de Estudos Ling{\"u}{\'\i}sticos do Sul. Florian{\'o}polis: UFSC},
+  year={2004}
+}
+
+% fala preparada
+@article{ananthakrishnan,
+  author={Ananthakrishnan, Sankaranarayanan and Narayanan, Shrikanth S.},
+  journal={IEEE Transactions on Audio, Speech, and Language Processing}, 
+  title={Automatic Prosodic Event Detection Using Acoustic, Lexical, and Syntactic Evidence}, 
+  year={2008},
+  volume={16},
+  number={1},
+  pages={216-228},
+  keywords={Event detection;Acoustic signal detection;Natural languages;Speech synthesis;Stress;Intensity modulation;Speech recognition;Automatic speech recognition;Synthesizers;Detectors;Accent;prominence;prosodic phrase boundary;prosody recognition;prosody–syntax interface;spoken language processing;stress;Accent;prominence;prosodic phrase boundary;prosody recognition;prosody-syntax interface;spoken language processing;stress},
+  doi={10.1109/TASL.2007.907570}}
+
+% fala preparada
+@inproceedings{jeon2009semi,
+  title={Semi-supervised learning for automatic prosodic event detection using co-training algorithm},
+  author={Jeon, Je Hun and Liu, Yang},
+  booktitle={Proceedings of the Joint Conference of the 47th Annual Meeting of the ACL and the 4th International Joint Conference on Natural Language Processing of the AFNLP},
+  pages={540--548},
+  year={2009}
+}
+% fala preparada
+@INPROCEEDINGS{ostendorfwightman1991,
+author = {C. Wightman and M. Ostendorf},
+booktitle = {Acoustics, Speech, and Signal Processing, IEEE International Conference on},
+title = {Automatic recognition of prosodic phrases},
+year = {1991},
+volume = {},
+issn = {},
+pages = {321-324},
+abstract = {The authors report on the development of two algorithms to automatically detect prosodic phrases. The first algorithm uses simple frame-based likelihood classifiers to detect breaths and silences, which yields a large percentage of major phrase breaks. To label other levels of prosodic structure, a second algorithm is introduced that uses phoneme durations given by a speech recognizer in conjunction with a tree quantizer and hidden Markov model to label a hierarchy of prosodic phrase breaks. This second algorithm yields phrase break predictions that have good correlation with hand labels, and correctly detects more than 90% of the major phrase boundaries.},
+keywords = {},
+doi = {10.1109/ICASSP.1991.150341},
+url = {https://doi.ieeecomputersociety.org/10.1109/ICASSP.1991.150341},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {apr}
+}
+
+% Veja o que é a entrada misc em https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex
+
+% TCC NICHOLAS
+@misc{tccnicholas,
+    author={Peçanha, Nicholas},
+    title={Adaptação de um método automático de segmentação prosódica baseado em heurísticas para o português do {B}rasil, usando dados de palestras e aulas do {NURC-SP.}},
+    school={ICMC, Universidade de São Paulo},
+    year={2022},
+    url = {https://sites.google.com/view/tarsila-c4ai/home}
+} 
+
+% TCC RAFAEL
+@misc{tccrafael,
+    author={Velloso, Rafael Meliani},
+    title={Adaptação de um método automático de segmentação prosódica baseado em heurísticas para o português do {B}rasil: Avaliação com diálogos e entrevistas do dataset {NURC-SP.}},
+    school={ICMC, Universidade de São Paulo},
+    url = {https://sites.google.com/view/tarsila-c4ai/home},
+    year={2022}
+} 
+
+% intro  spontaneous speech acc above 90%
+
+@book{rosenberg2009automatic,
+  title={Automatic detection and classification of prosodic events},
+  author={Rosenberg, Andrew},
+  year={2009},
+  publisher={Columbia University}
+}
+
+% O BURSC é lido! fala preparada!!
+
+@inproceedings{yoon10b_speechprosody,
+  author={Tae-Jin Yoon},
+  title={{Speaker consistency in the realization of prosodic prominence in the Boston University Radio Speech Corpus}},
+  year=2010,
+  booktitle={Proc. Speech Prosody 2010},
+  pages={paper 2012},
+  doi={10.21437/SpeechProsody.2010-278}
+}
+
+% tese da barbara
+@phdthesis{tesebarbara2022,
+    author = {Bárbara Helohá Falcão Teixeira},
+    title = {Detecção automática de fronteiras prosódicas na fala espontânea},
+    school = {Universidade Federal de Minas Gerais},
+    year = {2022},
+    url = {http://hdl.handle.net/1843/47273}
+}
+
+% TaskMaster
+
+@inproceedings{taskmaster-1,
+    title = "Taskmaster-1: Toward a Realistic and Diverse Dialog Dataset",
+    author = "Byrne, Bill  and
+      Krishnamoorthi, Karthik  and
+      Sankar, Chinnadhurai  and
+      Neelakantan, Arvind  and
+      Goodrich, Ben  and
+      Duckworth, Daniel  and
+      Yavuz, Semih  and
+      Dubey, Amit  and
+      Kim, Kyu-Young  and
+      Cedilnik, Andy",
+    editor = "Inui, Kentaro  and
+      Jiang, Jing  and
+      Ng, Vincent  and
+      Wan, Xiaojun",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1459/",
+    doi = "10.18653/v1/D19-1459",
+    pages = "4516--4525",
+    abstract = "A significant barrier to progress in data-driven approaches to building dialog systems is the lack of high quality, goal-oriented conversational data. To help satisfy this elementary requirement, we introduce the initial release of the Taskmaster-1 dataset which includes 13,215 task-based dialogs comprising six domains. Two procedures were used to create this collection, each with unique advantages. The first involves a two-person, spoken ``Wizard of Oz'' (WOz) approach in which trained agents and crowdsourced workers interact to complete the task while the second is ``self-dialog'' in which crowdsourced workers write the entire dialog themselves. We do not restrict the workers to detailed scripts or to a small knowledge base and hence we observe that our dataset contains more realistic and diverse conversations in comparison to existing datasets. We offer several baseline models including state of the art neural seq2seq architectures with benchmark performance as well as qualitative human evaluations. Dialogs are labeled with API calls and arguments, a simple and cost effective approach which avoids the requirement of complex annotation schema. The layer of abstraction between the dialog model and the service provider API allows for a given model to interact with multiple services that provide similar functionally. Finally, the dataset will evoke interest in written vs. spoken language, discourse patterns, error handling and other linguistic phenomena related to dialog system research, development and design."
+}
+
+@inproceedings{Survey-ControllableSpeechSynthesis,
+    title = "Towards Controllable Speech Synthesis in the Era of Large Language Models: A Systematic Survey",
+    author = "Xie, Tianxin  and
+      Rong, Yan  and
+      Zhang, Pengfei  and
+      Wang, Wenwu  and
+      Liu, Li",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.40/",
+    doi = "10.18653/v1/2025.emnlp-main.40",
+    pages = "764--791",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Text-to-speech (TTS) has advanced from generating natural-sounding speech to enabling fine-grained control over attributes like emotion, timbre, and style. Driven by rising industrial demand and breakthroughs in deep learning, e.g., diffusion and large language models (LLMs), controllable TTS has become a rapidly growing research area. This survey provides **the first** comprehensive review of controllable TTS methods, from traditional control techniques to emerging approaches using natural language prompts. We categorize model architectures, control strategies, and feature representations, while also summarizing challenges, datasets, and evaluations in controllable TTS. This survey aims to guide researchers and practitioners by offering a clear taxonomy and highlighting future directions in this fast-evolving field. One can visit https://github.com/imxtx/awesome-controllabe-speech-synthesis for a comprehensive paper list and updates."
+}
+
+% NaturalSpeech3
+@misc{NaturalSpeech3,
+      title={NaturalSpeech 3: Zero-Shot Speech Synthesis with Factorized Codec and Diffusion Models}, 
+      author={Zeqian Ju and Yuancheng Wang and Kai Shen and Xu Tan and Detai Xin and Dongchao Yang and Yanqing Liu and Yichong Leng and Kaitao Song and Siliang Tang and Zhizheng Wu and Tao Qin and Xiang-Yang Li and Wei Ye and Shikun Zhang and Jiang Bian and Lei He and Jinyu Li and Sheng Zhao},
+      year={2024},
+      eprint={2403.03100},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2403.03100}, 
+}
+
+% NaturalSpeech2
+@misc{NaturalSpeech2,
+      title={NaturalSpeech 2: Latent Diffusion Models are Natural and Zero-Shot Speech and Singing Synthesizers}, 
+      author={Kai Shen and Zeqian Ju and Xu Tan and Yanqing Liu and Yichong Leng and Lei He and Tao Qin and Sheng Zhao and Jiang Bian},
+      year={2023},
+      eprint={2304.09116},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2304.09116}, 
+}
+
+% BeDLM
+@inproceedings{Behavior-SD,
+    title = "Behavior-{SD}: Behaviorally Aware Spoken Dialogue Generation with Large Language Models",
+    author = "Lee, Sehun  and
+      Kim, Kang-wook  and
+      Kim, Gunhee",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-long.484/",
+    doi = "10.18653/v1/2025.naacl-long.484",
+    pages = "9574--9593",
+    ISBN = "979-8-89176-189-6",
+    abstract = "Spoken dialogue involves behaviors like turn-taking, interruptions, filler words, and backchannels, which make interactions more natural and engaging but are often overlooked in language models. These models struggle to explicitly model these behavioral traits, resulting in a less natural and personalized communication style that aligns with user needs. To address this challenge, we make two key contributions. First, we introduce Behavior-SD, a large-scale dataset containing over 100K spoken dialogues (2,164 hours) annotated with various conversational behaviors, synthesized via LLMs to model diverse full-duplex interactions. Second, we propose BeDLM, the first dialogue model capable of generating natural conversations conditioned on specific behavioral and narrative contexts, supporting simultaneous contributions from both speakers. Through human evaluations and behavior-adherence metrics, we demonstrate that BeDLM outperforms baseline models in generating natural, coherent, and behaviorally rich dialogues. Our work opens new possibilities for developing behaviorally-aware dialogue systems that more closely mimic human conversational dynamics, enhancing user engagement and communication effectiveness."
+}
+
+% Seed-TTS
+@misc{SeedTTS,
+      title={Seed-TTS: A Family of High-Quality Versatile Speech Generation Models}, 
+      author={Philip Anastassiou and Jiawei Chen and Jitong Chen and Yuanzhe Chen and Zhuo Chen and Ziyi Chen and Jian Cong and Lelai Deng and Chuang Ding and Lu Gao and Mingqing Gong and Peisong Huang and Qingqing Huang and Zhiying Huang and Yuanyuan Huo and Dongya Jia and Chumin Li and Feiya Li and Hui Li and Jiaxin Li and Xiaoyang Li and Xingxing Li and Lin Liu and Shouda Liu and Sichao Liu and Xudong Liu and Yuchen Liu and Zhengxi Liu and Lu Lu and Junjie Pan and Xin Wang and Yuping Wang and Yuxuan Wang and Zhen Wei and Jian Wu and Chao Yao and Yifeng Yang and Yuanhao Yi and Junteng Zhang and Qidi Zhang and Shuo Zhang and Wenjie Zhang and Yang Zhang and Zilin Zhao and Dejian Zhong and Xiaobin Zhuang},
+      year={2024},
+      eprint={2406.02430},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2406.02430}, 
+}
+
+% Entrainment
+@phdthesis{ProsodicEntrainment,
+    title={Entrainment in European Portuguese}, 
+    url={https://repositorio.ulisboa.pt/entities/publication/9a6f3d17-efed-4212-98f6-dd96e3d029c2},
+    author={Cabarrão, Vera Mónica dos Santos}, 
+    year={2020}, month={4},
+    school={Universidade de Lisboa}
+}
+
+% --------------- Metrics --------------------------
+@inproceedings{TTSEval_1,
+  title     = {{Speech Synthesis Evaluation — State-of-the-Art Assessment and Suggestion for a Novel Research Program}},
+  author    = {Petra Wagner and Jonas Beskow and Simon Betz and Jens Edlund and Joakim Gustafson and Gustav {Eje Henter} and Sébastien {Le Maguer} and Zofia Malisz and Éva Székely and Christina Tånnander and Jana Voße},
+  year      = {2019},
+  booktitle = {{10th ISCA Workshop on Speech Synthesis (SSW 10)}},
+  pages     = {105--110},
+  doi       = {10.21437/SSW.2019-19},
+}
+
+ @article{Prosodia_Barbosa_2012, 
+    title={Conhecendo melhor a prosódia: aspectos teóricos e metodológicos daquilo que molda nossa enunciação}, 
+    volume={20}, 
+    ISSN={2237-2083}, 
+    DOI={10.17851/2237-2083.20.1.11-27}, 
+    abstractNote={O trabalho tem a finalidade de apresentar aspectos teóricos emetodológicos da área de prosódia da fala para servir de ponto departida para o pesquisador iniciante. A partir da significaçãoplatônica do termo “prosódia” desenvolve as acepções ligadas aotermo na pesquisa científica contemporânea, apresentando noçõescomo proeminência, fronteira prosódica, acento frasal, grupoacentual, foco, ênfase, entoação e ritmo. Aspectos metodológicosda área como a montagem de corpora de fala de laboratório comrelação com a fala espontânea, a normalização da duração silábicae a diferenciação da prosódia na produção da prosódia na percepçãoda fala são discutidos com o fim de apresentar algumas questõesde relevo para a área de pesquisa.}, 
+    number={1}, 
+    journal={Revista de Estudos da Linguagem}, 
+    author={Barbosa, Plínio A.}, 
+    year={2012}, 
+    month={6}, 
+    pages={11–27}
+}
+
+@article{turnTaking, 
+    title={A Simplest Systematics for the Organization of Turn-Taking for Conversation}, 
+    volume={50}, 
+    ISSN={00978507}, 
+    DOI={10.2307/412243}, 
+    number={4}, 
+    journal={Language}, 
+    author={Sacks, Harvey and Schegloff, Emanuel A. and Jefferson, Gail}, 
+    year={1974}, month={12}, pages={696}
+}
+
+@phdthesis{investigacao_prosodia,
+    author={Silva, Remildo Barbosa da},
+    title={Investigação da Prosódia e dos Padrões de Fixação Ocular em Transições de Turno de Conversas Espontâneas Diádicas},
+    school={Universidade Federal de Alagoas},
+    year={2025}
+}
+
+@article{pitch_def,
+    author = {A.J.M. Houtsma},
+    title = {Pitch and timbre: Definition, meaning and use},
+    journal = {Journal of New Music Research},
+    volume = {26},
+    number = {2},
+    pages = {104--115},
+    year = {1997},
+    publisher = {Routledge},
+    doi = {10.1080/09298219708570720},
+    URL = {https://doi.org/10.1080/09298219708570720},
+    eprint = {https://doi.org/10.1080/09298219708570720}
+}
+
+@inproceedings{TTSDS2,
+  title     = {{TTSDS2: Robust Objective Evaluation for Human-Quality Synthetic Speech}},
+  author    = {Christoph Minixhofer and Ondřej Klejch and Peter Bell},
+  year      = {2025},
+  booktitle = {{13th edition of the Speech Synthesis Workshop}},
+  pages     = {68--75},
+  doi       = {10.21437/SSW.2025-11},
+}
+
+@article{Responsible_Evaluation, 
+    title={Position: Towards Responsible Evaluation for Text-to-Speech}, 
+    url={http://arxiv.org/abs/2510.06927}, 
+    DOI={10.48550/arXiv.2510.06927}, 
+    abstractNote={Recent advances in text-to-speech (TTS) technology have enabled systems to generate speech that is often indistinguishable from human speech, bringing benefits to accessibility, content creation, and human-computer interaction. However, current evaluation practices are increasingly inadequate for capturing the full range of capabilities, limitations, and societal impacts of modern TTS systems. This position paper introduces the concept of Responsible Evaluation and argues that it is essential and urgent for the next phase of TTS development, structured through three progressive levels: (1) ensuring the faithful and accurate reflection of a model’s true capabilities and limitations, with more robust, discriminative, and comprehensive objective and subjective scoring methodologies; (2) enabling comparability, standardization, and transferability through standardized benchmarks, transparent reporting, and transferable evaluation metrics; and (3) assessing and mitigating ethical risks associated with forgery, misuse, privacy violations, and security vulnerabilities. Through this concept, we critically examine current evaluation practices, identify systemic shortcomings, and propose actionable recommendations. We hope this concept will not only foster more reliable and trustworthy TTS technology but also guide its development toward ethically sound and societally beneficial applications.}, 
+    note={arXiv:2510.06927 [eess]}, 
+    journal = {},
+    number={arXiv:2510.06927}, 
+    publisher={arXiv}, 
+    author={Yang, Yifan and Wang, Hui and Han, Bing and Liu, Shujie and Li, Jinyu and Qin, Yong and Chen, Xie}, 
+    year={2026}, month=jan }
+
+
+@article{prosody_eval_julio, 
+    title={The evaluation of prosody in speech synthesis: a systematic review}, 
+    volume={31}, 
+    rights={https://creativecommons.org/licenses/by/4.0}, 
+    ISSN={1678-4804}, 
+    DOI={10.5753/jbcs.2025.5468}, 
+    abstractNote={This paper presents a systematic review on the relationship between prosody and speech synthesis, focusing on the evaluation of prosodic parameters of synthesized speech. The relevance of the topic lies in the fact that the task of speech synthesis has not yet been resolved, therefore the information obtained in this review can contribute to knowledge and to the improvement of the methodologies used in evaluating the prosody of synthesized speech. To select studies, we used the Parsifal platform, including 100 studies published between 2020 and 2024, with the purpose of answering eight previously established research questions. The highlights of this systematic review are presented in the following. The main prosodic parameters considered in speech synthesis systems are fundamental frequency (F0), duration and intensity, with F0 standing out (95 studies). The metric most frequently used in studies belongs to the group of acoustic metrics --- F0-RMSE (Root mean-squared error evaluation of F0). Lower values of this metric indicate greater proximity between the F0 of synthesized speech and that of natural speech. The most used dataset was LJ Speech, a public domain speech dataset consisting of English audio clips of a single speaker reading short excerpts from seven non-fiction books, reinforcing that the predominant language was English --- 48 studies focus on English to evaluate speech description prosody, although there is a relevant number of studies in Mandarin Chinese (27 studies) and Japanese (15 studies).Most studies used models as a baseline to compare the performance of their methods or proposed new models in order to improve the prosody of synthesized speech. Each study presented different methods for this improvement, according to the objectives, such as learning prosodic features extracted from reference speech and adding auxiliary modules to existing model architectures. As highlighted baselines, there was recurrent use of Tacotron 2, which generates mel-spectrograms from text and then synthesize speech from the generated mel-spectrograms using a separately trained vocoder, and FastSpeech 2, which can extract explicit prosodic features to be directly used as entry into training.}, 
+    number={1}, 
+    journal={Journal of the Brazilian Computer Society}, 
+    author={Galdino, Julio Cesar and Matos, Ariadne Nascimento and Svartman, Flaviane Romani Fernandes and Aluisio, Sandra Maria}, 
+    year={2025}, 
+    month={7}, 
+    pages={466–487} }
+
+@book{lang_processing_book, edition={3rd}, 
+    title={Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition with Language Models},
+    publisher={Stanford},
+    url={https://web.stanford.edu/~jurafsky/slp3/}, 
+    author={Jurafsky, Daniel and Martin, James H.}, 
+    year={2026} }
+
+@book{itsp2022_book,
+   title = {Introduction to Speech Processing},
+   edition = 2,
+   year = 2022,
+   publisher = {},
+   author = {Tom Bäckström and Okko Räsänen and Abraham Zewoudie and Pablo Pérez Zarazaga and Liisa Koivusalo and Sneha Das and Esteban Gómez Mellado and Marieum Bouafif Mansali and Daniel Ramos and Sudarsana Kadiri and Paavo Alku and Mohammad Hassan Vali},
+   url = {https://speechprocessingbook.aalto.fi},
+   doi = {10.5281/zenodo.6821775},
+   }
+
+@article{turn_taking_1974,
+ title = {A Simplest Systematics for the Organization of Turn-Taking for Conversation},
+ ISSN = {00978507, 15350665},
+ URL = {http://www.jstor.org/stable/412243},
+ abstract = {The organization of taking turns to talk is fundamental to conversation, as well as to other speech-exchange systems. A model for the turn-taking organization for conversation is proposed, and is examined for its compatibility with a list of grossly observable facts about conversation. The results of the examination suggest that, at least, a model for turn-taking in conversation will be characterized as locally managed, party-administered, interactionally controlled, and sensitive to recipient design. Several general consequences of the model are explicated, and contrasts are sketched with turn-taking organizations for other speech-exchange systems.},
+ author = {Harvey Sacks and Emanuel A. Schegloff and Gail Jefferson},
+ journal = {Language},
+ number = {4},
+ pages = {696--735},
+ publisher = {Linguistic Society of America},
+ urldate = {2026-04-30},
+ volume = {50},
+ year = {1974}
+}
+
+@article{analise_da_conversa_2009,
+  author       = {Silva, Caroline Rodrigues da and Andrade, Daniela Negraes P. and Ostermann, Ana Cristina},
+  title        = {Análise da Conversa: uma breve introdução},
+  journal      = {Revista Virtual de Estudos da Linguagem - ReVEL},
+  year         = {2009},
+  volume       = {7},
+  number       = {13},
+  url          = {http://www.revel.inf.br/downloadFile.php?local=artigos&id=184&lang=pt},
+  issn         = {1678-8931},
+  note         = {Acesso em: 30 de abril de 2026}
+}
+
+@book{SpeechActs_Searle1969_book, 
+    title={Speech Acts: An Essay in the Philosophy of Language},
+    publisher={Cambridge University Press},
+    author={Searle, John R.}, 
+    place={Cambridge},
+    year={1969}
+} 
+
+@article{contributing_to_discourse_1989,
+title = {Contributing to discourse},
+journal = {Cognitive Science},
+volume = {13},
+number = {2},
+pages = {259-294},
+year = {1989},
+issn = {0364-0213},
+doi = {https://doi.org/10.1016/0364-0213(89)90008-6},
+url = {https://www.sciencedirect.com/science/article/pii/0364021389900086},
+author = {Herbert H. Clark and Edward F. Schaefer},
+abstract = {For people to contribute to discourse, they must do more than utter the right sentence at the right time. The basic requirement is that they add to their common ground in an orderly way. To do this, we argue, they try to establish for each utterance the mutual belief that the addressees have understood what the speaker meant well enough for current purposes. This is accomplished by the collective actions of the current contributor and his or her partners, and these result in units of conversation called contributions. We present a model of contributions and show how it accounts for a variety of features of everyday conversations.}
+}
+
+@book{prosodia_plinio_barbosa_book,
+    title = {Prosódia},
+    author = {Barbosa, Plinio A},
+    abstract = {Uma passagem desta Prosódia, de Plínio A. Barbosa, resume de maneira exemplar o conteúdo da obra: “A prosódia é o componente de nossa fala que organiza nossos enunciados, moldando nossa maneira de falar através do concurso de modificações articulatórias que se manifestam acusticamente em unidades prosódicas. Essas unidades organizam a nossa fala em níveis que vão da sílaba ao enunciado entoacional”. Plínio A. Barbosa expõe ao leitor, de maneira simples e com a precisão e solidez teórica que o caracterizam, a estruturação dos níveis prosódicos da fala, abordando os aspectos perceptivos, articulatórios e funcionais concernentes. São contempladas as características da entoação, do ritmo, da qualidade de voz, da sílaba, da taxa de elocução, da taxa de articulação e da pausa. A conceituação dos elementos prosódicos, os exemplos e as ilustrações com gráficos cativam e esclarecem o leitor ávido por conhecimentos sobre um aspecto da fala que apresenta alta relevância comunicativa. Prosódia, da nova coleção da Parábola Editorial, “Linguística para o Ensino Superior”, é obra que emerge para permanecer como referência intemporal, fruto amadurecido de pesquisa experimental sólida.},
+    year = {2019},
+    publisher = {Parábola Editorial},
+    ISBN = {8579341639}
+}
+
+@article{
+    Conv_Naturalness_Predictor, 
+    title={Conversational Speech Naturalness Predictor}, 
+    url={http://arxiv.org/abs/2603.01467}, 
+    DOI={10.48550/arXiv.2603.01467}, 
+    abstractNote={Evaluation of conversational naturalness is essential for developing human-like speech agents. However, existing speech naturalness predictors are often designed to assess utterances from a single speaker, failing to capture conversation-level naturalness qualities. In this paper, we present a framework for an automatic naturalness predictor for two-speaker, multi-turn conversations. We first show that existing naturalness estimators have low, or sometimes even negative, correlations with conversational naturalness, based on conversational recordings annotated with human ratings. We then propose a dual-channel naturalness estimator, in which we investigate multiple pre-trained encoders with data augmentation. Our proposed model achieves substantially higher correlation with human judgments compared to existing naturalness predictors for both in-domain and out-of-domain conditions.}, 
+    note={arXiv:2603.01467 [eess]}, 
+    number={arXiv:2603.01467}, 
+    publisher={arXiv}, 
+    author={Xu, Anfeng and Gaur, Yashesh and Kanda, Naoyuki and Ouyang, Zhicheng and Zmolikova, Katerina and Raj, Desh and Merello, Simone and Sun, Anna and Kalinli, Ozlem}, 
+    year={2026}, 
+    journal={},
+    month={3}}
+
+
+@article{nvidia_dataset_toolbox, title={A Toolbox for Construction and Analysis of Speech Datasets}, url={http://arxiv.org/abs/2104.04896}, DOI={10.48550/arXiv.2104.04896}, abstractNote={Automatic Speech Recognition and Text-to-Speech systems are primarily trained in a supervised fashion and require high-quality, accurately labeled speech datasets. In this work, we examine common problems with speech data and introduce a toolbox for the construction and interactive error analysis of speech datasets. The construction tool is based on Kürzinger et al. work, and, to the best of our knowledge, the dataset exploration tool is the world’s first open-source tool of this kind. We demonstrate how to apply these tools to create a Russian speech dataset and analyze existing speech datasets (Multilingual LibriSpeech, Mozilla Common Voice). The tools are open sourced as a part of the NeMo framework.}, note={arXiv:2104.04896 [eess]}, number={arXiv:2104.04896}, publisher={arXiv}, author={Bakhturina, Evelina and Lavrukhin, Vitaly and Ginsburg, Boris}, year={2022}, month={1}, journal={} }

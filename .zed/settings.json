@@ -1,0 +1,41 @@
+{
+  "lsp": {
+    "texlab": {
+      "settings": {
+        "texlab": {
+          "auxDirectory": ".build",
+          "build": {
+            "onSave": true,
+            "forwardSearchAfter": true,
+            "executable": "latexmk",
+            "args": ["%f"]
+          },
+          "forwardSearch": {
+            "executable": "zathura",
+            "args": [
+              "--synctex-forward",
+              "%l:1:%f",
+              "-x",
+              "zed '%{input}':%{line}",
+              "%p"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "languages": {
+    "LaTeX": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "dprint",
+          "arguments": ["fmt", "--stdin", "tex"]
+        }
+      }
+    },
+    "Perl": {
+      "language_servers": []
+    }
+  }
+}
