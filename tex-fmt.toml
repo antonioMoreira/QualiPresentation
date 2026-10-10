@@ -1,0 +1,4 @@
+# tex-fmt configuration (https://github.com/WGUNDERWOOD/tex-fmt)
+# See docs/formatting.md for why tex-fmt is used instead of dprint/badness.
+wraplen = 100
+tabsize = 2

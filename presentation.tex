@@ -3,7 +3,9 @@
 
 \mode<presentation>
 {
-  \usetheme{Antibes} \usecolortheme{orchid} \setbeamercovered{transparent}
+  \usetheme{Antibes}
+  \usecolortheme{orchid}
+  \setbeamercovered{transparent}
   \usefonttheme{professionalfonts}
 }
 
@@ -47,13 +49,7 @@
 \usetikzlibrary{arrows,shapes}
 \setbeamertemplate{frametitle}{
   \nointerlineskip
-  \begin{beamercolorbox}[
-      wd=\paperwidth,
-      leftskip=0.3cm,
-      rightskip=0.3cm,
-      ht=2.5ex,
-      dp=1ex
-    ]{frametitle}
+  \begin{beamercolorbox}[wd=\paperwidth,leftskip=0.3cm,rightskip=0.3cm,ht=2.5ex,dp=1ex]{frametitle}
     \usebeamerfont{frametitle}\insertframetitle
     \hfill
     \small\insertframenumber\,/\,\inserttotalframenumber
@@ -70,9 +66,8 @@
 
 % \vfuzz=1.5pt
 
-\title[DiaTTS-Toolkit]{
-  Avaliação de Modelos de Síntese de Fala Conversacional em Português do Brasil
-}
+\title[DiaTTS-Toolkit]{Avaliação de Modelos de Síntese de Fala Conversacional em
+Português do Brasil}
 \institute{ICMC - USP}
 \author[Antonio Moreira]{Antonio Moreira \newline Orientadora: Sandra M. Aluísio}
 \date{\today}
@@ -82,8 +77,7 @@
 
 \AtBeginSubsection[]
 {
-  \begin{frame}
-    <beamer>{Sumário}
+  \begin{frame}<beamer>{Sumário}
     \tableofcontents[currentsection,currentsubsection]
   \end{frame}
 }
@@ -97,24 +91,23 @@
 \end{frame}
 
 \section{Fundamentação Teórica}
-
 \subsection{Prosódia}
-
 \begin{frame}{Prosódia}
-  \begin{block}{Definição de Prosódia}
-    <1-> Prosódia é o estudo dos aspectos \textbf{entoacionais}, \textbf{rítmicos} e
+  \begin{block}{Definição de Prosódia}<1->
+    Prosódia é o estudo dos aspectos \textbf{entoacionais}, \textbf{rítmicos} e
     \textbf{enfáticos} da linguagem \cite{lang_processing_book}.
   \end{block}
-  \begin{block}{}
-    <2->
+  \begin{block}{}<2->
     % TEM QUE TER A PÁGINA: 20
-    \begin{displayquote}[\citeauthor{prosodia_plinio_barbosa_book}:20 \cite{prosodia_plinio_barbosa_book}]
-      (\dots) o estudo da prosódia não considera diretamente o conteúdo segmental, ou \textbf{o que
-      se diz}, e sim a forma sonora e sua função ligadas ao \textbf{como se diz}.
+    \begin{displayquote}[\citeauthor{prosodia_plinio_barbosa_book}:20
+      \cite{prosodia_plinio_barbosa_book}]
+      (\dots) o estudo da prosódia não considera diretamente o conteúdo segmental, ou
+      \textbf{o que se diz}, e sim a forma sonora e sua função ligadas ao
+      \textbf{como se diz}.
     \end{displayquote}
   \end{block}
-  \begin{block}{}
-    <3-> A prosódia tem seu campo de estudo nos domínios \textbf{linguístico},
+  \begin{block}{}<3->
+    A prosódia tem seu campo de estudo nos domínios \textbf{linguístico},
     \textbf{paralinguístico} e \textbf{extralinguístico}.
   \end{block}
 \end{frame}
@@ -123,7 +116,7 @@
   \setbeamercolor{caption}{bg=white}
 
   \setbeamertemplate{caption}{
-    \begin{beamercolorbox}[wd=\linewidth,center,sep=1pt]{caption}
+    \begin{beamercolorbox}[wd=\linewidth, center, sep=1pt]{caption}
       \tiny
       {\usebeamercolor[fg]{caption name}\insertcaptionname:} \insertcaption
     \end{beamercolorbox}
@@ -132,11 +125,10 @@
   \begin{figure}
     \centering
     \includegraphics[width=0.6\linewidth]{imgs/DiaTTS-Toolkit-Prosody.png}
-    \caption{
-      Fluxo \textit{top-down} da materialização da fala, desde a cognição (\textbf{intenção}) até a
-      materialidade (\textbf{o som/fala})
-      \cite{prosodia_plinio_barbosa_book}\cite{Prosodia_Barbosa_2012}. Fonte: Elaborada pelo autor.
-    }
+    \caption{Fluxo \textit{top-down} da materialização da fala, desde a cognição
+      (\textbf{intenção}) até a materialidade (\textbf{o som/fala})
+      \cite{prosodia_plinio_barbosa_book}\cite{Prosodia_Barbosa_2012}. Fonte: Elaborada
+    pelo autor.}
     \label{fig:prosody_flow}
     % \fautor
   \end{figure}
@@ -144,9 +136,9 @@
 
 % \begin{frame}{Prosódia}
 % \begin{figure}
-% 	\centering
-% 	\includegraphics[width=0.6\linewidth]{imgs/DiaTTS-Toolkit-Prosody.png}
-% 	% \fautor
+%   \centering
+%   \includegraphics[width=0.6\linewidth]{imgs/DiaTTS-Toolkit-Prosody.png}
+%   % \fautor
 % \end{figure}
 % \end{frame}
 
@@ -162,10 +154,11 @@
 
 \begin{frame}{Prosódia}{Unidades Prosódicas}
   \begin{block}{}
-    \begin{displayquote}[\customcite{prosodia_plinio_barbosa_book}:37 \cite{prosodia_plinio_barbosa_book}]
-      A prosódia é o componente de nossa fala que \textbf{organiza} nossos enunciados, moldando
-      nossa maneira de falar através do concurso de modificações articulatórias que se manifestam
-      acusticamente em \textbf{unidades prosódicas}.
+    \begin{displayquote}[\customcite{prosodia_plinio_barbosa_book}:37
+      \cite{prosodia_plinio_barbosa_book}]
+      A prosódia é o componente de nossa fala que \textbf{organiza} nossos enunciados,
+      moldando nossa maneira de falar através do concurso de modificações articulatórias
+      que se manifestam acusticamente em \textbf{unidades prosódicas}.
     \end{displayquote}
   \end{block}
 \end{frame}
@@ -194,7 +187,6 @@
 %Estudo da Fala-em-interação  (Análise da Conversa,  2009)
 % Referenciar!
 \subsection{Conversação}
-
 \begin{frame}{Turnos}
   \begin{block}{Diálogo como sequência de turnos.}
     Um diálogo $\mathcal{D}$ é uma sequência de $n$ turnos \cite{lang_processing_book}
@@ -203,8 +195,8 @@
     \]
   \end{block}
   \begin{block}{}
-    Cada turno $t_i$ pertence a um falante, de modo que turnos adjacentes pertencem a falantes
-    diferentes.
+    Cada turno $t_i$ pertence a um falante, de modo que turnos adjacentes pertencem a
+    falantes diferentes.
     \[
       t_i \in \mathbb{S}_k \implies (t_{i-1}, t_{i+1}) \notin \mathbb{S}_k
     \]
@@ -214,13 +206,13 @@
 
 \begin{frame}{Atos de Fala}
   \begin{block}{}
-    Cada enunciado (\textit{utterance}) num diálogo pode ser visto como uma \textbf{ação} sendo
-    performada pelo falante.
+    Cada enunciado (\textit{utterance}) num diálogo pode ser visto como uma \textbf{ação}
+    sendo performada pelo falante.
   \end{block}
   \begin{block}{Taxonomia dos Atos}
     Não existe uma única maneira de classificar os \textbf{atos de fala}. \\
-    A classificação a seguir está no livro \textit{Speech Acts: An Essay in the Philosophy of
-    Language. Searle, J. R. (1969)}\cite{SpeechActs_Searle1969_book}.
+    A classificação a seguir está no livro \textit{Speech Acts: An Essay in the
+    Philosophy of Language. Searle, J. R. (1969)}\cite{SpeechActs_Searle1969_book}.
     \begin{multicols}{2}
       \begin{itemize}
         \item Requisição
@@ -238,13 +230,13 @@
 
 \begin{frame}{\textit{Grounding}}
   \begin{block}{}
-    Os atos da fala não agem de maneira independente; pelo contrário, são uma \textbf{tarefa
-    coletiva} \cite{lang_processing_book}.
+    Os atos da fala não agem de maneira independente; pelo contrário, são uma
+    \textbf{tarefa coletiva} \cite{lang_processing_book}.
   \end{block}
   \begin{block}{}
-    Desta forma, os participantes do diálogo buscam uma \textbf{base de entendimento comum}
-    (\textit{grounding}) na qual todos concordam, e o diálogo constrói-se a partir daí
-    \cite{lang_processing_book}.
+    Desta forma, os participantes do diálogo buscam uma \textbf{base de entendimento
+    comum} (\textit{grounding}) na qual todos concordam, e o diálogo constrói-se a partir
+    daí \cite{lang_processing_book}.
   \end{block}
 \end{frame}
 
@@ -254,12 +246,13 @@
     \cite{contributing_to_discourse_1989}. \\
     Cada contribuição tem duas fases:
     \begin{itemize}
-      \item \textbf{Apresentação}: O falante \(\mathbb{S}_A\) apresenta o enunciado \(u\) sob a
-            suposição de que, se o ouvinte \(\mathbb{S}_B\) fornecer evidência \(e\), ele poderá
-            acreditar que \(u\) foi compreendido.
-      \item \textbf{Aceitação}: O ouvinte \(\mathbb{S}_B\) aceita \(u\) fornecendo a evidência
-            \(e'\) \textit{do que ele acredita} que entendeu. Ele o faz assumindo que, uma vez que
-            \(\mathbb{S}_A\) registra a evidência \(e'\), ele acredita que foi compreendido.
+      \item \textbf{Apresentação}: O falante \(\mathbb{S}_A\) apresenta o enunciado \(u\)
+        sob a suposição de que, se o ouvinte \(\mathbb{S}_B\) fornecer evidência \(e\),
+        ele poderá acreditar que \(u\) foi compreendido.
+      \item \textbf{Aceitação}: O ouvinte \(\mathbb{S}_B\) aceita \(u\) fornecendo a
+        evidência \(e'\) \textit{do que ele acredita} que entendeu. Ele o faz assumindo
+        que, uma vez que  \(\mathbb{S}_A\) registra a evidência \(e'\), ele acredita que
+        foi compreendido.
     \end{itemize}
     \pause
     As fases da contribuição, de \textbf{forma cíclica}, constituem o entendimento mútuo
@@ -269,13 +262,13 @@
 
 \begin{frame}{\textit{Grounding}}
   \begin{block}{Evidências de Entendimento}
-    Evidências de entendimento\cite{contributing_to_discourse_1989} ordenadas das mais fracas para
-    as mais fortes:
+    Evidências de entendimento\cite{contributing_to_discourse_1989} ordenadas das mais
+    fracas para as mais fortes:
     \begin{enumerate}
       \item \textbf{Atenção Continuada} (\textit{Continued Attention}).
       \item \textbf{Próxima Contribuição Relevante} (\textit{Relevant Next Contribution}).
-      \item \textbf{Reconhecimento/Sinais} (\textit{Acknowledgement}) -- pausas-preenchidas
-            (\textit{filling-gaps}).
+      \item \textbf{Reconhecimento/Sinais} (\textit{Acknowledgement}) --
+        pausas-preenchidas (\textit{filling-gaps}).
       \item \textbf{Demonstração/Paráfrase} (\textit{Demonstration}).
       \item \textbf{Exibição/Repetição literal} (\textit{Display}).
     \end{enumerate}
@@ -291,23 +284,23 @@
   \end{block}
   \pause
   \begin{block}{}
-    Correlaciona-se com o entendimento de \textit{coerência local} e \textit{coerência global}
-    \cite{lang_processing_book}.
+    Correlaciona-se com o entendimento de \textit{coerência local} e \textit{coerência
+    global} \cite{lang_processing_book}.
   \end{block}
 \end{frame}
 
 \begin{frame}{Iniciativa}
   \begin{block}{}
-    Às vezes uma conversa é completamente controlada por um único participante, como no caso de
-    \textbf{entrevistas}.
+    Às vezes uma conversa é completamente controlada por um único participante, como no
+    caso de \textbf{entrevistas}.
   \end{block}
   \pause
   \begin{block}{Iniciativa}
-    O conceito de iniciativa (\textit{conversational initiative}) refere-se ao \textbf{controle} e
-    ao \textbf{direcionamento} do fluxo de uma conversa. Em termos simples, ter a iniciativa
-    significa ser quem está \textit{conduzindo} o diálogo naquele momento -- seja fazendo as
-    perguntas, introduzindo novos tópicos ou exigindo uma resposta da outra parte
-    \cite{lang_processing_book}.
+    O conceito de iniciativa (\textit{conversational initiative}) refere-se ao
+    \textbf{controle} e ao \textbf{direcionamento} do fluxo de uma conversa. Em termos
+    simples, ter a iniciativa significa ser quem está \textit{conduzindo} o diálogo
+    naquele momento -- seja fazendo as perguntas, introduzindo novos tópicos ou exigindo
+    uma resposta da outra parte  \cite{lang_processing_book}.
   \end{block}
 \end{frame}
 
@@ -315,35 +308,36 @@
   \begin{block}{}
     \begin{itemize}
       \item Prosódia e discurso são intimamente relacionados.
-            \pause
-      \item É através da \textbf{análise prosódica} que identificamos as características intrínsecas
-            ao diálogo...
+        \pause
+      \item É através da \textbf{análise prosódica} que identificamos as características
+        intrínsecas ao diálogo...
     \end{itemize}
   \end{block}
 \end{frame}
 
 \begin{frame}{Prosódia e Discurso}{Tomada de Turno}
   \begin{block}{Definição}
-    Tomada de turno (\textit{turn-taking}) refere-se ao sistema de sinalizações e regras que
-    permitem aos falantes alternarem quem está falando de forma fluida e organizada
+    Tomada de turno (\textit{turn-taking}) refere-se ao sistema de sinalizações e regras
+    que permitem aos falantes alternarem quem está falando de forma fluida e organizada
     \cite{Prosodia_Barbosa_2012} \cite{prosodia_plinio_barbosa_book}.
   \end{block}
 \end{frame}
 
 \begin{frame}{Prosódia e Discurso}{Tomada de Turno}
   \begin{block}{Tomada de Turno \textbf{Cooperativa}}
-    Acontece quando as regras de passagem de turno são respeitadas -- ao final de uma interrogação,
-    por exemplo. Neste cenário, \textbf{unidades prosódicas} específicas sinalizam que o primeiro
-    interlocutor acabou seu turno e está passando a vez para o segundo interlocutor.
+    Acontece quando as regras de passagem de turno são respeitadas -- ao final de uma
+    interrogação, por exemplo. Neste cenário, \textbf{unidades prosódicas} específicas
+    sinalizam que o primeiro interlocutor acabou seu turno e está passando a vez para o
+    segundo interlocutor.
   \end{block}
 \end{frame}
 
 \begin{frame}{Prosódia e Discurso}{Tomada de Turno}
   \begin{block}{Tomada de Turno \textbf{Competitiva}}
     Acontece quando as regras de passagem de turno não são respeitadas, como em casos de
-    \textbf{interrupções}. Neste cenário, um interlocutor, diferente do que está falado (i.e. do que
-    \textit{detém} o turno), utiliza de artifícios prosódicos (e.g. aumenta a intensidade da fala),
-    para roubar o turno.
+    \textbf{interrupções}. Neste cenário, um interlocutor, diferente do que está falado
+    (i.e. do que \textit{detém} o turno), utiliza de artifícios prosódicos (e.g. aumenta
+    a intensidade da fala), para roubar o turno.
   \end{block}
 \end{frame}
 
@@ -358,21 +352,21 @@
 
 \begin{frame}{Prosódia e Discurso}{Formas Prosódicas}
   \begin{block}{}
-    A prosódia direciona diferentes \textbf{ilocuções}, i.e., a intenção da ação na fala: uma ordem,
-    uma dúvida, um convite, um chamado, etc.
+    A prosódia direciona diferentes \textbf{ilocuções}, i.e., a intenção da ação na fala:
+    uma ordem, uma dúvida, um convite, um chamado, etc.
   \end{block}
   \pause
   \begin{block}{Definição}
-    \textbf{Formas Prosódicas} são as configurações acústico-articulatórias dinâmicas e contínuas
-    que constituem a materialização física da prosódia em um enunciado
+    \textbf{Formas Prosódicas} são as configurações acústico-articulatórias dinâmicas e
+    contínuas que constituem a materialização física da prosódia em um enunciado
     \cite{prosodia_plinio_barbosa_book}.
   \end{block}
 \end{frame}
 
 \begin{frame}{Prosódia e Discurso}{Formas Prosódicas}
   \begin{block}{Entrainment Prosódico}
-    Definido pela capacidade dos seres humanos se ajustarem, tanto em nível comportamental como
-    discursivo, ao seu interlocutor \cite{ProsodicEntrainment}.
+    Definido pela capacidade dos seres humanos se ajustarem, tanto em nível
+    comportamental como discursivo, ao seu interlocutor \cite{ProsodicEntrainment}.
   \end{block}
 \end{frame}
 
@@ -380,17 +374,18 @@
 
 \begin{frame}{Tipos de modelos de \textit{TTS}}{Não-Controláveis vs.\ Controláveis}
   \begin{block}{Controlabilidade}
-    % Capacidade de um modelo de síntese de fala de \textbf{controlar explicitamente} atributos prosódicos da fala.\cite{Survey-ControllableSpeechSynthesis}
-    Capacidade de um modelo de síntese de fala de \textbf{controlar explicitamente} os correlatos
-    físicos ou perceptivos da prosódia \cite{Survey-ControllableSpeechSynthesis}.
+    % Capacidade de um modelo de síntese de fala de \textbf{controlar explicitamente}
+    % atributos prosódicos da fala.\cite{Survey-ControllableSpeechSynthesis}
+    Capacidade de um modelo de síntese de fala de \textbf{controlar explicitamente} os
+    correlatos físicos ou perceptivos da prosódia \cite{Survey-ControllableSpeechSynthesis}.
   \end{block}
   \begin{block}{}
     Desta forma:
     \begin{itemize}
-      \item \textbf{Modelos Não-Controláveis}: não contêm estruturas dedicadas à controlar atributos
-            fonéticos.
-      \item \textbf{Modelos Controláveis}: contêm estruturas dedicadas à controlar atributos
-            prosódicos.
+      \item \textbf{Modelos Não-Controláveis}: não contêm estruturas dedicadas à
+        controlar atributos fonéticos.
+      \item \textbf{Modelos Controláveis}: contêm estruturas dedicadas à controlar
+        atributos prosódicos.
     \end{itemize}
   \end{block}
 \end{frame}
@@ -399,7 +394,7 @@
   \setbeamercolor{caption}{bg=white}
 
   \setbeamertemplate{caption}{
-    \begin{beamercolorbox}[wd=\linewidth,center,sep=2pt]{caption}
+    \begin{beamercolorbox}[wd=\linewidth, center, sep=2pt]{caption}
       {\usebeamercolor[fg]{caption name}\insertcaptionname:} \insertcaption
     \end{beamercolorbox}
   }
@@ -407,10 +402,8 @@
   \begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{imgs/DiaTTS-Toolkit-UnControllable.png}
-    \caption{
-      Arquitetura do \textit{Tacotron2}, modelo autorregressivo (\textit{AR}) baseado em
-      \textit{RNN} -- Adaptado de \cite{Tacotron2}.
-    }
+    \caption{Arquitetura do \textit{Tacotron2}, modelo autorregressivo (\textit{AR})
+    baseado em \textit{RNN} -- Adaptado de \cite{Tacotron2}.}
     \label{fig:uncontrollable}
   \end{figure}
 \end{frame}
@@ -419,7 +412,7 @@
   \setbeamercolor{caption}{bg=white}
 
   \setbeamertemplate{caption}{
-    \begin{beamercolorbox}[wd=\linewidth,center,sep=2pt]{caption}
+    \begin{beamercolorbox}[wd=\linewidth, center, sep=2pt]{caption}
       {\usebeamercolor[fg]{caption name}\insertcaptionname:} \insertcaption
     \end{beamercolorbox}
   }
@@ -427,10 +420,8 @@
   \begin{figure}
     \centering
     \includegraphics[width=0.7\linewidth]{imgs/DiaTTS-Toolkit-Controllable.png}
-    \caption{
-      \textit{FastSpeech2} (\textit{NAR}) baseado em \textit{Transformer} -- Adaptado de
-      \cite{FastSpeech2}.
-    }
+    \caption{\textit{FastSpeech2} (\textit{NAR}) baseado em \textit{Transformer} --
+    Adaptado de \cite{FastSpeech2}.}
     \label{fig:controllable}
     % \fautor
   \end{figure}
@@ -440,7 +431,7 @@
   \setbeamercolor{caption}{bg=white}
 
   \setbeamertemplate{caption}{
-    \begin{beamercolorbox}[wd=\linewidth,center,sep=2pt]{caption}
+    \begin{beamercolorbox}[wd=\linewidth, center, sep=2pt]{caption}
       {\usebeamercolor[fg]{caption name}\insertcaptionname:} \insertcaption
     \end{beamercolorbox}
   }
@@ -448,10 +439,8 @@
   \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{imgs/SurveyDiffusionLLM.png}
-    \caption{
-      Tendência observada da predominância de modelos baseados em \textbf{Difusão} e \textbf{LLM}
-      \cite{Survey-ControllableSpeechSynthesis}
-    }.
+    \caption{Tendência observada da predominância de modelos baseados em \textbf{Difusão}
+    e \textbf{LLM} \cite{Survey-ControllableSpeechSynthesis}}.
     \label{fig:diffusion_llm}
   \end{figure}
 \end{frame}
@@ -472,7 +461,7 @@
   \setbeamercolor{caption}{bg=white}
 
   \setbeamertemplate{caption}{
-    \begin{beamercolorbox}[wd=\linewidth,center,sep=2pt]{caption}
+    \begin{beamercolorbox}[wd=\linewidth, center, sep=2pt]{caption}
       {\usebeamercolor[fg]{caption name}\insertcaptionname:} \insertcaption
     \end{beamercolorbox}
   }
@@ -480,49 +469,48 @@
   \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{imgs/DiaTTS-Toolkit-TTSTypes-AR-NAR.png}
-    \caption{
-      Classificação de modelos de TTS quanto ao suporte \textbf{nativo} ao diálogo. Fonte: Elaborada
-      pelo autor.
-    }
+    \caption{Classificação de modelos de TTS quanto ao suporte \textbf{nativo} ao
+    diálogo. Fonte: Elaborada pelo autor.}
     \label{fig:tts-dialogue-types}
   \end{figure}
 \end{frame}
 
 \begin{frame}{Tipos de modelos de \textit{TTS}}{Sensibilidade ao Diálogo}
   \begin{block}{}
-    Os modelos de síntese de fala ainda enfrentam problemas para lidar com a síntese de diálogos
-    \cite{Behavior-SD}.
+    Os modelos de síntese de fala ainda enfrentam problemas para lidar com a síntese de
+    diálogos \cite{Behavior-SD}.
   \end{block}
   \begin{block}{}
-    Dentre os modelos sensíveis ao diálogo, nem todas as \textbf{características intrínsecas ao
-    diálogo} são capturadas.
+    Dentre os modelos sensíveis ao diálogo, nem todas as \textbf{características
+    intrínsecas ao diálogo} são capturadas.
   \end{block}
 \end{frame}
 
-\begin{frame}{Métricas de Avaliação de Áudios Sintetizados}{Métricas Subjetivas vs.\ Métricas
-  Objetivas}
+\begin{frame}{Métricas de Avaliação de Áudios Sintetizados}{Métricas Subjetivas
+  vs.\ Métricas Objetivas}
   \begin{block}{Métricas Subjetivas}
-    A \textbf{avaliação subjetiva} refere-se a configurações de avaliação nas quais \textit{humanos}
-    medem ou quantificam o desempenho e a qualidade \cite{itsp2022_book}.
+    A \textbf{avaliação subjetiva} refere-se a configurações de avaliação nas quais
+    \textit{humanos} medem ou quantificam o desempenho e a qualidade \cite{itsp2022_book}.
   \end{block}
   \begin{block}{Métricas Objetivas}
-    A \textbf{avaliação objetiva} avalia quantitativamente propriedades acústicas, inteligibilidade
-    e similaridade de forma objetiva, sem intervenção de ouvintes humanos \cite{itsp2022_book}.
+    A \textbf{avaliação objetiva} avalia quantitativamente propriedades acústicas,
+    inteligibilidade e similaridade de forma objetiva, sem intervenção de ouvintes
+    humanos \cite{itsp2022_book}.
   \end{block}
 \end{frame}
 
 \begin{frame}{Métricas de Avaliação de Áudios Sintetizados}{Métricas Subjetivas}
   \begin{block}{MOS}
-    \textbf{MOS (\textit{Mean Opinion Score)}:} Mede a qualidade geral e a naturalidade intrínseca
-    da voz em uma escala absoluta. É a métrica mais frequente em avaliações subjetivas
-    \cite{prosody_eval_julio}.
+    \textbf{MOS (\textit{Mean Opinion Score)}:} Mede a qualidade geral e a naturalidade
+    intrínseca da voz em uma escala absoluta. É a métrica mais frequente em avaliações
+    subjetivas \cite{prosody_eval_julio}.
   \end{block}
 \end{frame}
 
 \begin{frame}{Métricas de Avaliação de Áudios Sintetizados}{Métricas Subjetivas}
   \begin{block}{CMOS}
-    \textbf{CMOS (Comparative Mean Opinion Score):} Avalia a preferência e a qualidade de forma
-    comparativa entre duas amostras de fala \cite{prosody_eval_julio}.
+    \textbf{CMOS (Comparative Mean Opinion Score):} Avalia a preferência e a qualidade de
+    forma comparativa entre duas amostras de fala \cite{prosody_eval_julio}.
   \end{block}
 \end{frame}
 
@@ -531,43 +519,41 @@
     Evolução moderna do \textit{MOS} tradicional \cite{EyetrackingMOS}.
     \begin{itemize}
       \item Maior ``assertividade'' na pontuação devido ao rastreamento ocular.
-      \item Aumento significativo na escala do resultado obtido (de $[1 \to 5]$ para $[0 \to 100]$).
+      \item Aumento significativo na escala do resultado obtido (de $[1 \to 5]$
+        para $[0 \to 100]$).
     \end{itemize}
   \end{block}
 \end{frame}
 
 \begin{frame}{Métricas de Avaliação de Áudios Sintetizados}{Métricas Objetivas}
   \begin{block}{WER e CER}
-    \textbf{WER} (\textit{Word Error Rate}) e \textbf{CER} (\textit{Character Error Rate}): Medem a
-    inteligibilidade do áudio sintetizado, submetendo-o a um modelo \textit{ASR} e calculando a taxa
-    de erro de palavras e caracteres \cite{lang_processing_book}. Fórmula:
-    $$
-      WER = \frac{S + D + I}{N}
-    $$
-    Onde $S$ representa as substituições, $D$ as deleções, $I$ as inserções e $N$ o número total de
-    palavras (ou caracteres, no caso do CER) presentes na referência.
+    \textbf{WER} (\textit{Word Error Rate}) e \textbf{CER} (\textit{Character Error
+    Rate}): Medem a inteligibilidade do áudio sintetizado, submetendo-o a um modelo
+    \textit{ASR} e calculando a taxa de erro de palavras e caracteres
+    \cite{lang_processing_book}. Fórmula:
+    $$WER = \frac{S + D + I}{N}$$
+    Onde $S$ representa as substituições, $D$ as deleções, $I$ as inserções e $N$ o
+    número total de palavras (ou caracteres, no caso do CER) presentes na referência.
   \end{block}
 \end{frame}
 
 \begin{frame}{Métricas de Avaliação de Áudios Sintetizados}{Métricas Objetivas}
   \begin{block}{F0-RMSE}
-    \textbf{F0 RMSE} (Raiz do Erro Quadrático Médio da Frequência Fundamental): Avalia a precisão do
-    \textit{pitch} e a fidelidade acústica da prosódia. É a métrica objetiva mais utilizada na
-    literatura \cite{prosody_eval_julio}. Fórmula:
-    $$
-      RMSE_{F0} = \sqrt{\frac{1}{T} \sum_{t=1}^{T} (F0_t - \hat{F0}_t)^2}
-    $$
-    Em que $T$ é o número total de quadros, $F0_t$ é a frequência fundamental de referência e
-    $\hat{F0}_t$ é a frequência fundamental estimada no quadro $t$.
+    \textbf{F0 RMSE} (Raiz do Erro Quadrático Médio da Frequência Fundamental): Avalia a
+    precisão do \textit{pitch} e a fidelidade acústica da prosódia. É a métrica objetiva
+    mais utilizada na literatura \cite{prosody_eval_julio}. Fórmula:
+    $$RMSE_{F0} = \sqrt{\frac{1}{T} \sum_{t=1}^{T} (F0_t - \hat{F0}_t)^2}$$
+    Em que $T$ é o número total de quadros, $F0_t$ é a frequência fundamental de
+    referência e $\hat{F0}_t$ é a frequência fundamental estimada no quadro $t$.
   \end{block}
 \end{frame}
 
 \begin{frame}{Métricas de Avaliação de Áudios Sintetizados}{Métricas Objetivas}
   \begin{block}{TTSDS2- ICLR 2026}
-    \textbf{TTSDS2} (\textit{Text-to-Speech Distribution Score 2}) \cite{TTSDS2} é uma métrica
-    objetiva, distribucional e multifatorial proposta para avaliar sistemas de TTS
-    (\textit{Text-to-Speech}), comparando distribuições de atributos perceptuais da fala sintética
-    com a fala real e com distribuições de ruído.
+    \textbf{TTSDS2} (\textit{Text-to-Speech Distribution Score 2}) \cite{TTSDS2} é uma
+    métrica objetiva, distribucional e multifatorial proposta para avaliar sistemas de
+    TTS (\textit{Text-to-Speech}), comparando distribuições de atributos perceptuais da
+    fala sintética com a fala real e com distribuições de ruído.
   \end{block}
 \end{frame}
 
@@ -582,21 +568,20 @@
     \end{itemize}
     Cálculo da métrica:
     \[
-      \text{TTSDS2}(D, \tilde{D}, \mathfrak{D}^{\text{NOISE}})
-      = 100 \times \frac{W_2^\text{NOISE}}{W_2^\text{REAL} + W_2^\text{NOISE}}
+      \text{TTSDS2}(D, \tilde{D}, \mathfrak{D}^{\text{NOISE}}) = 100 \times
+      \frac{W_2^\text{NOISE}}{W_2^\text{REAL} + W_2^\text{NOISE}}
     \]
   \end{block}
 \end{frame}
 
 \section{Revisão da Literatura}
-
 \subsection[EN e CH]{Trabalhos sobre \textit{corpora} conversacionais em Inglês e Chinês}
 
 \begin{frame}{DailyTalk -- ICASSP 2023}
   \begin{block}{Contribuições}
     \begin{enumerate}
-      \item \textit{Córpus} conversacional aberto para treinamento de modelos de síntese de fala
-            conversacional;
+      \item \textit{Córpus} conversacional aberto para treinamento de modelos de síntese
+        de fala conversacional;
       \item Proposta de modelo de síntese de fala conversacional sensível ao contexto;
       \item Métricas de avaliação de diálogos sintetizados por modelos de \textit{TTS}.
     \end{enumerate}
@@ -610,12 +595,12 @@
       \item<2-> Modelo \textit{baseline} (\textbf{FastSpeech2} \cite{FastSpeech2} Modificado)
       \item<3-> Experimentos: integridade e adaptabilidade.
       \item<4-> Métricas:
-            \begin{itemize}
-              \item \textit{Dialogue-level MOS}
-              \item \textit{Pairwise MOS} (GT-synthesized)
-              \item \textit{Pairwise MOS} (synthesized pair)
-              \item \textit{User-system Simulation MOS}
-            \end{itemize}
+        \begin{itemize}
+          \item \textit{Dialogue-level MOS}
+          \item \textit{Pairwise MOS} (GT-synthesized)
+          \item \textit{Pairwise MOS} (synthesized pair)
+          \item \textit{User-system Simulation MOS}
+        \end{itemize}
     \end{enumerate}
   \end{block}
 \end{frame}
@@ -624,16 +609,17 @@
   \begin{block}{DailyTalk Estatísticas}
     \begin{table}[ht]
       \centering
-      % \caption{Estatísticas dos conjuntos de dados utilizados nos experimentos do artigo sobre o \textit{DailyTalk}. Fem = feminino; masc. masculino.}
+      % \caption{Estatísticas dos conjuntos de dados utilizados nos experimentos do
+      % artigo sobre o \textit{DailyTalk}. Fem = feminino; masc. masculino.}
       \label{tab:DailyTalk}
       \small
       \begin{tabular}{@{}llll@{}}
-                                      & \textbf{DailyTalk}               \\
-        \textbf{Duração Total}        & $\approx$ 20 horas               \\
-        \textbf{Número de Locutores}  & 2 (1 Masc., 1 Fem.)              \\
-        \textbf{Número de Enunciados} & 23.773                           \\
-        \textbf{Gênero Textual}       & Diálogos                         \\
-        \textbf{Estilo}               & Fala Conversacional (espontânea) \\
+        & \textbf{DailyTalk} \\
+        \textbf{Duração Total}   & $\approx$ 20 horas \\
+        \textbf{Número de Locutores} & 2 (1 Masc., 1 Fem.) \\
+        \textbf{Número de Enunciados} & 23.773 \\
+        \textbf{Gênero Textual} & Diálogos \\
+        \textbf{Estilo} & Fala Conversacional (espontânea)  \\
       \end{tabular}
     \end{table}
   \end{block}
@@ -653,7 +639,7 @@
   \begin{block}{}
     \begin{enumerate}
       \item<1-> \href{https://www.magicdatatech.com/}{Magic Data Technology Co., Ltd}:
-            especializados na criação de conjuntos de dados.
+        especializados na criação de conjuntos de dados.
       \item<2-> Diálogos do cotidiano (devidamente rotulados).
       \item<3-> Experimentos em \textit{ASR} e \textit{SD}.
     \end{enumerate}
@@ -664,16 +650,17 @@
   \begin{block}{MagicData-RAMC Estatísticas}
     \begin{table}[ht]
       \centering
-      % \caption{Estatísticas dos conjuntos de dados utilizados nos experimentos do artigo sobre o \textit{DailyTalk}. Fem = feminino; masc. masculino.}
+      % \caption{Estatísticas dos conjuntos de dados utilizados nos experimentos do
+      % artigo sobre o \textit{DailyTalk}. Fem = feminino; masc. masculino.}
       \label{tab:MagicData}
       \small
       \begin{tabular}{@{}llll@{}}
-                                     & \textbf{MagicData}               \\
-        \textbf{Duração Total}       & $\approx$ 180 horas              \\
-        \textbf{Número de Locutores} & 663 (368 Masc., 295 Fem.)        \\
-        \textbf{Número de Domínios}  & 15                               \\
-        \textbf{Gênero Textual}      & Diálogos                         \\
-        \textbf{Estilo}              & Fala Conversacional (espontânea) \\
+        & \textbf{MagicData} \\
+        \textbf{Duração Total}  & $\approx$ 180 horas \\
+        \textbf{Número de Locutores} & 663 (368 Masc., 295 Fem.) \\
+        \textbf{Número de Domínios} & 15 \\
+        \textbf{Gênero Textual} & Diálogos \\
+        \textbf{Estilo} & Fala Conversacional (espontânea)  \\
       \end{tabular}
     \end{table}
   \end{block}
@@ -702,14 +689,15 @@
   \begin{block}{}
     \begin{enumerate}
       \item<-1> Obtenção:
-            \begin{itemize}
-              \item Cedido pelo \href{https://escuteaterra.museudapessoa.org/}{Museu da Pessoa}.
-            \end{itemize}
+        \begin{itemize}
+          \item Cedido pelo
+            \href{https://escuteaterra.museudapessoa.org/}{Museu da Pessoa}.
+        \end{itemize}
       \item<2-> Características:
-            \begin{itemize}
-              \item Segmentados pelo \textit{WhisperX} \cite{whisperX}
-              \item Anonimizado (principalmente no início)
-            \end{itemize}
+        \begin{itemize}
+          \item Segmentados pelo \textit{WhisperX} \cite{whisperX}
+          \item Anonimizado (principalmente no início)
+        \end{itemize}
     \end{enumerate}
   \end{block}
 \end{frame}
@@ -721,11 +709,11 @@
       \label{tab:MuPe}
       \small
       \begin{tabular}{@{}llll@{}}
-                                     & \textbf{MuPe}                    \\
-        \textbf{Duração Total}       & $\approx$ 365 horas              \\
-        \textbf{Número de Locutores} & 249 (114 Masc., 135 Fem.)        \\
-        \textbf{Gênero Textual}      & Diálogos                         \\
-        \textbf{Estilo}              & Fala Conversacional (espontânea) \\
+        & \textbf{MuPe} \\
+        \textbf{Duração Total}  & $\approx$ 365 horas \\
+        \textbf{Número de Locutores} & 249 (114 Masc., 135 Fem.) \\
+        \textbf{Gênero Textual} & Diálogos \\
+        \textbf{Estilo} & Fala Conversacional (espontânea)  \\
       \end{tabular}
     \end{table}
   \end{block}
@@ -742,13 +730,14 @@
 
 \begin{frame}{Lacunas}{Corpora Conversacionais}
   \begin{block}{}
-    O fluxo de pesquisa de modelos -- do treinamento à avaliação -- de \textit{TTS} conversacionais
-    necessita de \textit{corpora} conversacionais abertos e devidamente anotados.
+    O fluxo de pesquisa de modelos -- do treinamento à avaliação -- de \textit{TTS}
+    conversacionais necessita de \textit{corpora} conversacionais abertos e
+    devidamente anotados.
   \end{block}
   \pause
   \begin{block}{Escassez de Córpus}
-    Observa-se, mesmo no inglês, poucos conjuntos de dados com tais características \cite{Lee_2023}
-    \cite{Behavior-SD} \cite{Survey-ControllableSpeechSynthesis}.
+    Observa-se, mesmo no inglês, poucos conjuntos de dados com tais características
+    \cite{Lee_2023} \cite{Behavior-SD} \cite{Survey-ControllableSpeechSynthesis}.
   \end{block}
 \end{frame}
 
@@ -756,10 +745,8 @@
   \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{imgs/DialogueDatasetsSurvey.png}
-    \caption{
-      Tabela que sumariza \textit{córpora} conversacionais para TTSs controláveis. Fonte:
-      \cite{Survey-ControllableSpeechSynthesis}.
-    }
+    \caption{Tabela que sumariza \textit{córpora} conversacionais para TTSs controláveis.
+    Fonte: \cite{Survey-ControllableSpeechSynthesis}.}
     \label{fig:dialogue_datasets}
   \end{figure}
 \end{frame}
@@ -768,9 +755,9 @@
   \begin{block}{Escassez de Córpus}
     \begin{itemize}
       \item \customcite{Behavior-SD} \cite{Behavior-SD}.
-            \begin{itemize}
-              \item \textit{Behavior-SD}: córpus.
-            \end{itemize}
+        \begin{itemize}
+          \item \textit{Behavior-SD}: córpus.
+        \end{itemize}
     \end{itemize}
   \end{block}
 \end{frame}
@@ -779,15 +766,16 @@
   \begin{block}{}
     \begin{itemize}
       \item \customcite{CoVoMix_2024} \cite{CoVoMix_2024}.
-            \begin{itemize}
-              \item \textit{Turn-Taking}.
-              \item Comportamentos paralinguísticos.
-              \item Consistência
-            \end{itemize}
+        \begin{itemize}
+          \item \textit{Turn-Taking}.
+          \item Comportamentos paralinguísticos.
+          \item Consistência
+        \end{itemize}
       \item \customcite{Behavior-SD} \cite{Behavior-SD}.
-            \begin{itemize}
-              \item \textit{BeDLM}: \textit{Behavior-conditioned spoken Dialogue Language Model}.
-            \end{itemize}
+        \begin{itemize}
+          \item \textit{BeDLM}: \textit{Behavior-conditioned spoken Dialogue
+            Language Model}.
+        \end{itemize}
     \end{itemize}
   \end{block}
 \end{frame}
@@ -796,12 +784,12 @@
   \begin{block}{}
     \begin{enumerate}
       \item Poucas métricas para Avaliação de Diálogos Sintetizados.
-            \begin{itemize}
-              \item \customcite{prosody_eval_julio} \cite{prosody_eval_julio}
-              \item \customcite{Conv_Naturalness_Predictor} \cite{Conv_Naturalness_Predictor}
-              \item \customcite{Behavior-SD} \cite{Behavior-SD}
-              \item \customcite{Responsible_Evaluation} \cite{Responsible_Evaluation}
-            \end{itemize}
+        \begin{itemize}
+          \item \customcite{prosody_eval_julio} \cite{prosody_eval_julio}
+          \item \customcite{Conv_Naturalness_Predictor} \cite{Conv_Naturalness_Predictor}
+          \item \customcite{Behavior-SD} \cite{Behavior-SD}
+          \item \customcite{Responsible_Evaluation} \cite{Responsible_Evaluation}
+        \end{itemize}
       \item Dentre as métricas que existem, \textbf{não existe um consenso}.
     \end{enumerate}
   \end{block}
@@ -820,54 +808,34 @@
 
 \begin{frame}{Objetivo Geral}
   \begin{block}{}
-    Criação de um \textit{framework} completo que seja capaz de estruturar conjuntos de dados
-    conversacionais novos e já existentes afim de adequá-los à tarefa de treinamento de \textit{TTS}
-    conversacionais \textit{SOTA} específicos e, em seguida, avaliar o desempenho desses novos
-    conjuntos de dados sob a ótica de métricas dedicadas ao contexto conversacional.
+    Criação de um \textit{framework} completo que seja capaz de estruturar conjuntos de
+    dados conversacionais novos e já existentes afim de adequá-los à tarefa de
+    treinamento de \textit{TTS} conversacionais \textit{SOTA} específicos e, em seguida,
+    avaliar o desempenho desses novos conjuntos de dados sob a ótica de métricas
+    dedicadas ao contexto conversacional.
   \end{block}
 \end{frame}
 
 \begin{frame}{Objetivos Específicos}
   \begin{block}{}
     \begin{enumerate}
-      \item[1] Adaptar o conjunto de dados MuPe\cite{evaldo-leal-etal-2025-mupe} à tarefa de
-            \textit{TTS} conversacional e avalia-lo no modelo proposto.
-      \item[2] Criação de um pipeline para adequar um conjunto de dados de fala editada (dados do
-            \textit{PECEGE} à tarefa de treinamento de modelos de \textit{TTS} conversacionais.
-    \end{enumerate}
-  \end{block}
-\end{frame}
-
-\begin{frame}{Objetivos Específicos}
-  \begin{block}{}
-    \begin{enumerate}
-      \item[3] Das etapas 1 e 2, analisar quais componentes podem ser genéricos e incorporar a
-            ferramenta proposta, criando, assim, um ciclo de desenvolvimento.
-      \item[4] Disponibilização da ferramenta como código aberto (\textit{open-source}) seguindo
-            diretrizes rígidas de desenvolvimento.
+      \item[1] Adaptar o conjunto de dados MuPe\cite{evaldo-leal-etal-2025-mupe} à tarefa
+        de \textit{TTS} conversacional e avalia-lo no modelo proposto.
+      \item[2] Criação de um pipeline para adequar um conjunto de dados de fala editada
+        (dados do \textit{PECEGE}) à tarefa de treinamento de modelos de \textit{TTS}
+        conversacionais.
     \end{enumerate}
   \end{block}
 \end{frame}
 
 \section{DiaTTS-Toolkit}
-
 \subsection{Core Components}
-
-% \begin{frame}{DiaTTS-Toolkit - Breve contextualização...}
-% \begin{block}{}
-%     \begin{itemize}
-%         \item Antes de entender arquitetura
-%         \pause
-%         \item
-%     \end{itemize}
-% \end{block}
-% \end{frame}
 
 \begin{frame}{DiaTTS-Toolkit}
   \setbeamercolor{caption}{bg=white}
 
   \setbeamertemplate{caption}{
-    \begin{beamercolorbox}[wd=\linewidth,center,sep=2pt]{caption}
+    \begin{beamercolorbox}[wd=\linewidth, center, sep=2pt]{caption}
       {\usebeamercolor[fg]{caption name}\insertcaptionname:} \insertcaption
     \end{beamercolorbox}
   }
@@ -876,11 +844,9 @@
     \centering
     \includegraphics[width=0.6\linewidth]{imgs/DiaTTS-Toolkit-CorporaClasses.png}
     \tiny
-    \caption{
-      Classificação de \textit{córpora} segundo: grau de controle pelo experimentado; gênero
-      enunciativo ; plano expressivo. Fonte: Adaptado de \citeauthor{Prosodia_Barbosa_2012}
-      \cite{Prosodia_Barbosa_2012}.
-    }
+    \caption{Classificação de \textit{córpora} segundo: grau de controle pelo
+      experimentado; gênero enunciativo ; plano expressivo. Fonte: Adaptado de
+    \citeauthor{Prosodia_Barbosa_2012} \cite{Prosodia_Barbosa_2012}.}
     \label{fig:corpora}
   \end{figure}
 \end{frame}
@@ -889,7 +855,7 @@
   \setbeamercolor{caption}{bg=white}
 
   \setbeamertemplate{caption}{
-    \begin{beamercolorbox}[wd=\linewidth,center,sep=2pt]{caption}
+    \begin{beamercolorbox}[wd=\linewidth, center, sep=2pt]{caption}
       {\usebeamercolor[fg]{caption name}\insertcaptionname:} \insertcaption
     \end{beamercolorbox}
   }
@@ -908,18 +874,18 @@
   \begin{block}{Pipeline de Criação}
     \begin{enumerate}
       \item Restrições do DailyTalk.
-            \begin{itemize}
-              \item $5 +$ diálogos;
-              \item Alternância de sexo;
-            \end{itemize}
-            \pause
+        \begin{itemize}
+          \item $5+$ diálogos;
+          \item Alternância de sexo;
+        \end{itemize}
+        \pause
       \item Restrição Adicional:
-            \begin{itemize}
-              \item Geográfica: Entrevistas \textit{apenas} de São Paulo capital;
-            \end{itemize}
-            \pause
+        \begin{itemize}
+          \item Geográfica: Entrevistas \textit{apenas} de São Paulo capital;
+        \end{itemize}
+        \pause
       \item Inferência do sexo dos entrevistadores via
-            \href{https://ai.google.dev/gemini-api/docs?hl=pt-br}{Gemini API}
+        \href{https://ai.google.dev/gemini-api/docs?hl=pt-br}{Gemini API}
     \end{enumerate}
   \end{block}
 \end{frame}
@@ -958,20 +924,33 @@
   \begin{table}[]
     \begin{tabular}{|l|c|cccc|}
       \hline
-      \multirow{2}{*}{\textbf{Tarefas}}            & \multicolumn{1}{c|}{\textbf{Ano 0 - 2024}} &                                          \multicolumn{4}{c|}{\textbf{Ano 1 - 2025}}                                          \\
-      \cline{2-6}
-                                                   &     \multicolumn{1}{c|}{\textbf{2º S}}     & \multicolumn{1}{c|}{\textbf{1º T}} & \multicolumn{1}{c|}{\textbf{2º T}} & \multicolumn{1}{c|}{\textbf{3º T}} & \textbf{4º T} \\
-      \hline
-      Créditos como Aluno Especial                 &           \multicolumn{1}{c|}{X}           &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &               \\
-      \hline
-      Créditos como Aluno Regular                  &           \multicolumn{1}{c|}{}            &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &               \\
-      \hline
-      F.T. - TTS conversacional                    &           \multicolumn{1}{c|}{}            &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       X       \\
-      \hline
-      F.T. - Métricas de TTS conversacional        &           \multicolumn{1}{c|}{}            &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       X       \\
-      \hline
-      Segmentação do MuPe para criação do MuPeTalk &           \multicolumn{1}{c|}{}            &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       X       \\
-      \hline
+      \multirow{2}{*}{\textbf{Tarefas}}
+      & \multicolumn{1}{c|}{\textbf{Ano 0 - 2024}}           &
+      \multicolumn{4}{c|}{\textbf{Ano 1 - 2025}}
+      \\ \cline{2-6}
+      & \multicolumn{1}{c|}{\textbf{2º S}}                   &
+      \multicolumn{1}{c|}{\textbf{1º T}} & \multicolumn{1}{c|}{\textbf{2º T}} &
+      \multicolumn{1}{c|}{\textbf{3º T}} & \textbf{4º T} \\ \hline
+      Créditos como Aluno Especial
+      & \multicolumn{1}{c|}{X}                               & \multicolumn{1}{c|}{}
+      & \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{}              &
+      \\ \hline
+      Créditos como Aluno Regular
+      & \multicolumn{1}{c|}{}                                & \multicolumn{1}{c|}{X}
+      & \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{}              &
+      \\ \hline
+      F.T. - TTS conversacional
+      & \multicolumn{1}{c|}{}                                & \multicolumn{1}{c|}{}
+      & \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{X}             & X
+      \\ \hline
+      F.T. - Métricas de TTS conversacional
+      & \multicolumn{1}{c|}{}                                & \multicolumn{1}{c|}{}
+      & \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{X}             & X
+      \\ \hline
+      Segmentação do MuPe para criação do MuPeTalk
+      & \multicolumn{1}{c|}{}                                & \multicolumn{1}{c|}{}
+      & \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{X}             & X
+      \\ \hline
     \end{tabular}
   \end{table}
 \end{frame}
@@ -981,30 +960,41 @@
   \begin{table}[]
     \begin{tabular}{|l|cccc|}
       \hline
-      \multirow{2}{*}{\textbf{Tarefas}}       &                                                    \multicolumn{4}{c|}{\textbf{Ano 2 - 2026}}                                                     \\
-      \cline{2-5}
-                                              & \multicolumn{1}{c|}{\textbf{1º T}} & \multicolumn{1}{c|}{\textbf{2º T}} & \multicolumn{1}{c|}{\textbf{3º T}} & \multicolumn{1}{c|}{\textbf{4º T}} \\
-      \hline
-      F.T. - TTS conversacionais              &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        \\
-      \hline
-      F.T. - Métricas de TTS conversacionais  &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       \\
-      \hline
-      F.T. - Frameworks de criação de córpora &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        \\
-      \hline
-      F.T. - Prosódia                         &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       \\
-      \hline
-      F.T. - Processamento de Sinais          &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       \\
-      \hline
-      Criação do MuPeTalk                     &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        \\
-      \hline
-      Disponibilização do MuPeTalk            &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        \\
-      \hline
-      Treinamento usando MuPeTalk             &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        \\
-      \hline
-      Validação dos áudios gerados            &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        \\
-      \hline
-      Publicação do MuPeTalk                  &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        \\
-      \hline
+      \multirow{2}{*}{\textbf{Tarefas}}
+      & \multicolumn{4}{c|}{\textbf{Ano 2 - 2026}}
+      \\ \cline{2-5}
+      & \multicolumn{1}{c|}{\textbf{1º T}}  & \multicolumn{1}{c|}{\textbf{2º T}}  &
+      \multicolumn{1}{c|}{\textbf{3º T}} & \multicolumn{1}{c|}{\textbf{4º T}} \\ \hline
+      F.T. - TTS conversacionais
+      & \multicolumn{1}{c|}{X}              & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{}              \\ \hline
+      F.T. - Métricas de TTS conversacionais
+      & \multicolumn{1}{c|}{X}              & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{X}             \\ \hline
+      F.T. - Frameworks de criação de córpora
+      & \multicolumn{1}{c|}{X}              & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{}              \\ \hline
+      F.T. - Prosódia
+      & \multicolumn{1}{c|}{X}              & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{X}             \\ \hline
+      F.T. - Processamento de Sinais
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{}               &
+      \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{X}             \\ \hline
+      Criação do MuPeTalk
+      & \multicolumn{1}{c|}{X}              & \multicolumn{1}{c|}{}               &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{}              \\ \hline
+      Disponibilização do MuPeTalk
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{}              \\ \hline
+      Treinamento usando MuPeTalk
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{}              \\ \hline
+      Validação dos áudios gerados
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{}              \\ \hline
+      Publicação do MuPeTalk
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{}              \\ \hline
     \end{tabular}
   \end{table}
 \end{frame}
@@ -1014,39 +1004,52 @@
   \begin{table}[]
     \begin{tabular}{|l|cc|cccc|}
       \hline
-      \multirow{2}{*}{\textbf{Tarefas}} &               \multicolumn{2}{c|}{\textbf{Ano 2 - 2026}}                &                                              \multicolumn{4}{c|}{\textbf{Ano 3 - 2027}}                                               \\
-      \cline{2-7}
-                                        & \multicolumn{1}{c|}{\textbf{3º T}} & \multicolumn{1}{c|}{\textbf{4º T}} & \multicolumn{1}{c|}{\textbf{1º T}} & \multicolumn{1}{c|}{\textbf{2º T}} & \multicolumn{1}{c|}{\textbf{3º T}} &     \textbf{4º T}      \\
-      \hline
-      ETL Pipeline PecegeTalk           &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{}  \\
-      \hline
-      Re-anotação PecegeTalk            &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{}  \\
-      \hline
-      Treinamento PecegeTalk AR/NAR     &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{}  \\
-      \hline
-      Validação Treinamento PecegeTalk  &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{}  \\
-      \hline
-      Publicação PecegeTalk             &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{}  \\
-      \hline
-      Estruturação DiaTTS-Toolkit       &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       &       \multicolumn{1}{c|}{X}       & \multicolumn{1}{c|}{}  \\
-      \hline
-      Publicação DiaTTS-Toolkit         &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{X}       & \multicolumn{1}{c|}{}  \\
-      \hline
-      Defesa                            &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        &       \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{X} \\
-      \hline
+      \multirow{2}{*}{\textbf{Tarefas}}
+      & \multicolumn{2}{c|}{\textbf{Ano 2 - 2026}}                                &
+      \multicolumn{4}{c|}{\textbf{Ano 3 - 2027}}
+      \\ \cline{2-7}
+      & \multicolumn{1}{c|}{\textbf{3º T}}  & \multicolumn{1}{c|}{\textbf{4º T}}  &
+      \multicolumn{1}{c|}{\textbf{1º T}} & \multicolumn{1}{c|}{\textbf{2º T}} &
+      \multicolumn{1}{c|}{\textbf{3º T}} & \textbf{4º T}           \\ \hline
+      ETL Pipeline PecegeTalk
+      & \multicolumn{1}{c|}{X}              & \multicolumn{1}{c|}{}               &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{} \\ \hline
+      Re-anotação PecegeTalk
+      & \multicolumn{1}{c|}{X}              & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{} \\ \hline
+      Treinamento PecegeTalk AR/NAR
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{} \\ \hline
+      Validação Treinamento PecegeTalk
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{X}              &
+      \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{} \\ \hline
+      Publicação PecegeTalk
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{}               &
+      \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{}              &
+      \multicolumn{1}{c|}{}              & \multicolumn{1}{c|}{} \\ \hline
+      Estruturação DiaTTS-Toolkit
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{}               &
+      \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{X}             &
+      \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{} \\ \hline
+      Publicação DiaTTS-Toolkit
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{}               &
+      \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             &
+      \multicolumn{1}{c|}{X}             & \multicolumn{1}{c|}{}   \\ \hline
+      Defesa
+      & \multicolumn{1}{c|}{}               & \multicolumn{1}{c|}{}               &
+      \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{}             &
+      \multicolumn{1}{c|}{}             & \multicolumn{1}{c|}{X}   \\ \hline
     \end{tabular}
   \end{table}
 \end{frame}
 
 \appendix
-
-\section
-
-<presentation>*{\appendixname}
-
-\subsection
-
-<presentation>*{References}
+\section*{\appendixname}
+\subsection*{References}
 
 \begin{frame}[allowframebreaks]
   \frametitle<presentation>{References}

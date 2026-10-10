@@ -26,11 +26,13 @@
   },
   "languages": {
     "LaTeX": {
+      "tab_size": 2,
+      "hard_tabs": false,
       "format_on_save": "on",
       "formatter": {
         "external": {
-          "command": "dprint",
-          "arguments": ["fmt", "--stdin", "tex"]
+          "command": "tex-fmt",
+          "arguments": ["--stdin"]
         }
       }
     },
