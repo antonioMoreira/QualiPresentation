@@ -1,4 +1,6 @@
 .build
-.agents/
+!.agents/
+.agents/*
+!.agents/AGENTS.md
 
 *.synctex.gz
