@@ -10,19 +10,8 @@ $dvi_mode = 0;
 $aux_dir  = '.build';
 $out_dir  = '.';
 
-# Disable redundant bibliography checking if not citing references
-$bibtex_use = 1;
-
-# Bilingual build: resume.tex -> resume_en.pdf and resume_pt.pdf
-# CV_LANG selects the language (default: en). After a successful English build,
-# we link resume.pdf to resume_en.pdf for TexLab/Zathura %p compatibility,
-# and then run latexmk with CV_LANG=pt to build the Portuguese PDF.
-# my %babel = (en => 'english', pt => 'brazilian');
-# my $lang  = $ENV{CV_LANG} // 'en';
-# $jobname  = "resume_$lang";
-# $lualatex = "lualatex -interaction=nonstopmode -synctex=1 %O "
-#           . "\"\\def\\cvlang{$lang}\\def\\cvlangbabel{$babel{$lang}}\\input{%S}\"";
-#
-# if ($lang eq 'en') {
-#     $success_cmd = 'ln -sf resume_en.pdf resume.pdf && ln -sf resume_en.synctex.gz resume.synctex.gz && CV_LANG=pt latexmk resume.tex';
-# }
+# Bibliography: biblatex with backend=biber (see docs/biber.md)
+# 2 = run biber whenever the .bib changes, and delete the generated .bbl on `latexmk -c`
+$bibtex_use = 2;
+# --validate-datamodel: warn about .bib fields/entries biblatex does not understand
+$biber = 'biber --validate-datamodel %O %S';
