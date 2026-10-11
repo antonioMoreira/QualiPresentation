@@ -36,6 +36,17 @@
         }
       }
     },
+    "BibTeX": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "bash",
+          "arguments": ["scripts/tidy-bib.sh", "--stdin"]
+        }
+      }
+    },
     "Perl": {
       "language_servers": []
     }

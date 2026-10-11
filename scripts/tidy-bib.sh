@@ -1,26 +1,38 @@
 #!/usr/bin/env bash
-# Sort a .bib file: entries by citation key, fields alphabetically.
+# Tidy a .bib file with bibtex-tidy: entries sorted by citation key, fields in bibtex-tidy's default order.
 # Usage: scripts/tidy-bib.sh [file.bib]   (default: presentation.bib)
+#        scripts/tidy-bib.sh --stdin      (filter: stdin -> stdout, used by Zed's format on save)
 # See docs/biber.md.
 set -euo pipefail
 
-bib="${1:-presentation.bib}"
+flags=(
+  --curly
+  --numeric
+  --space=2
+  --align=13
+  --blank-lines
+  --sort=key
+  --duplicates=key
+  --merge=combine
+  --no-escape
+  --sort-fields
+  --remove-empty-fields
+  --no-remove-dupe-fields
+  --wrap=80
+  --quiet
+)
 
-# bibtex-tidy has no "alphabetical" field order, so pass every field name found in the file, sorted.
-fields=$(grep -oE '^[[:space:]]*[A-Za-z][A-Za-z0-9_-]*[[:space:]]*=' "$bib" \
-  | tr -d ' \t=' | tr '[:upper:]' '[:lower:]' | sort -u | paste -sd,)
+if [ "${1:-}" = "--stdin" ]; then
+  exec bibtex-tidy "${flags[@]}"
+fi
+
+bib="${1:-presentation.bib}"
 
 tmp=$(mktemp)
 trap 'rm -f "$tmp"' EXIT
 
-# Read from stdin: in v1.14.0, passing the file name with --no-modify prints only the first line.
-npx -y bibtex-tidy@1.14.0 \
-  --no-escape \
-  --sort=key \
-  --sort-fields="$fields" \
-  --align=14 \
-  --space=2 \
-  - < "$bib" > "$tmp"
+# Read from stdin and write to stdout so the file is only replaced when the run succeeds.
+bibtex-tidy "${flags[@]}" - < "$bib" > "$tmp"
 
 [ -s "$tmp" ] || { echo "bibtex-tidy produced no output; $bib left unchanged" >&2; exit 1; }
 cat "$tmp" > "$bib"
