@@ -1,0 +1,151 @@
+\section{Revisão da Literatura}
+\subsection[EN e CH]{Trabalhos sobre \textit{corpora} conversacionais em Inglês e Chinês}
+
+\begin{frame}{DailyTalk -- ICASSP 2023}
+  \begin{block}{Contribuições}
+    \begin{enumerate}
+      \item \textit{Córpus} conversacional aberto para treinamento de modelos de síntese
+        de fala conversacional;
+      \item Proposta de modelo de síntese de fala conversacional sensível ao contexto;
+      \item Métricas de avaliação de diálogos sintetizados por modelos de \textit{TTS}.
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\begin{frame}{DailyTalk -- ICASSP 2023}
+  \begin{block}{}
+    \begin{enumerate}
+      \item<1-> Obtenção e Estruturação do \textit{córpus}.
+      \item<2-> Modelo \textit{baseline} (\textbf{FastSpeech2} \cite{FastSpeech2} Modificado)
+      \item<3-> Experimentos: integridade e adaptabilidade.
+      \item<4-> Métricas:
+        \begin{itemize}
+          \item \textit{Dialogue-level MOS}
+          \item \textit{Pairwise MOS} (GT-synthesized)
+          \item \textit{Pairwise MOS} (synthesized pair)
+          \item \textit{User-system Simulation MOS}
+        \end{itemize}
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\begin{frame}{DailyTalk -- ICASSP 2023}
+  \begin{block}{DailyTalk Estatísticas}
+    \begin{table}[ht]
+      \centering
+      % \caption{Estatísticas dos conjuntos de dados utilizados nos experimentos do
+      % artigo sobre o \textit{DailyTalk}. Fem = feminino; masc. masculino.}
+      \label{tab:DailyTalk}
+      \small
+      \begin{tabular}{@{}llll@{}}
+        & \textbf{DailyTalk} \\
+        \textbf{Duração Total}   & $\approx$ 20 horas \\
+        \textbf{Número de Locutores} & 2 (1 Masc., 1 Fem.) \\
+        \textbf{Número de Enunciados} & 23.773 \\
+        \textbf{Gênero Textual} & Diálogos \\
+        \textbf{Estilo} & Fala Conversacional (espontânea)  \\
+      \end{tabular}
+    \end{table}
+  \end{block}
+\end{frame}
+
+\begin{frame}{MagicData-RAMC -- Interspeech 2022}
+  \begin{block}{Contribuições}
+    \textit{RAMC = Rich Annotated Mandarin Conversational (speech dataset).}
+    \begin{enumerate}
+      \item \textit{Córpus} conversacional especializado no cenário de diálogos;
+      \item Detalhamento dos metadados dos falantes.
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\begin{frame}{MagicData-RAMC -- Interspeech 2022}
+  \begin{block}{}
+    \begin{enumerate}
+      \item<1-> \href{https://www.magicdatatech.com/}{Magic Data Technology Co., Ltd}:
+        especializados na criação de conjuntos de dados.
+      \item<2-> Diálogos do cotidiano (devidamente rotulados).
+      \item<3-> Experimentos em \textit{ASR} e \textit{SD}.
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\begin{frame}{MagicData-RAMC -- Interspeech 2022}
+  \begin{block}{MagicData-RAMC Estatísticas}
+    \begin{table}[ht]
+      \centering
+      % \caption{Estatísticas dos conjuntos de dados utilizados nos experimentos do
+      % artigo sobre o \textit{DailyTalk}. Fem = feminino; masc. masculino.}
+      \label{tab:MagicData}
+      \small
+      \begin{tabular}{@{}llll@{}}
+        & \textbf{MagicData} \\
+        \textbf{Duração Total}  & $\approx$ 180 horas \\
+        \textbf{Número de Locutores} & 663 (368 Masc., 295 Fem.) \\
+        \textbf{Número de Domínios} & 15 \\
+        \textbf{Gênero Textual} & Diálogos \\
+        \textbf{Estilo} & Fala Conversacional (espontânea)  \\
+      \end{tabular}
+    \end{table}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Taskmaster -- EMNLP 2019}
+  \begin{block}{Contribuições}
+    \begin{enumerate}
+      \item \textit{Córpus} conversacional textual.
+      \item Técnica de obtenção de \textit{córpus}.
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\subsection[PT]{Trabalhos sobre \textit{corpora} conversacionais em Português}
+
+\begin{frame}{MuPe -- COLING 2025}
+  \begin{block}{Contribuições}
+    \begin{enumerate}
+      \item \textit{Córpus} conversacional no domínio de \textbf{entrevista}.
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\begin{frame}{MuPe -- COLING 2025}
+  \begin{block}{}
+    \begin{enumerate}
+      \item<-1> Obtenção:
+        \begin{itemize}
+          \item Cedido pelo
+            \href{https://escuteaterra.museudapessoa.org/}{Museu da Pessoa}.
+        \end{itemize}
+      \item<2-> Características:
+        \begin{itemize}
+          \item Segmentados pelo \textit{WhisperX} \cite{whisperX}
+          \item Anonimizado (principalmente no início)
+        \end{itemize}
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\begin{frame}{MuPe -- COLING 2025}
+  \begin{block}{}
+    \begin{table}[ht]
+      \centering
+      \label{tab:MuPe}
+      \small
+      \begin{tabular}{@{}llll@{}}
+        & \textbf{MuPe} \\
+        \textbf{Duração Total}  & $\approx$ 365 horas \\
+        \textbf{Número de Locutores} & 249 (114 Masc., 135 Fem.) \\
+        \textbf{Gênero Textual} & Diálogos \\
+        \textbf{Estilo} & Fala Conversacional (espontânea)  \\
+      \end{tabular}
+    \end{table}
+  \end{block}
+\end{frame}
+
+% \subsection[Discussões]{Discussões Sobre a Revisão da Literatura}
+% \begin{frame}{Discussões Sobre a Revisão da Literatura}
+% \begin{block}{}
+%     Discussões sobre o que foi estudado.
+% \end{block}
+% \end{frame}

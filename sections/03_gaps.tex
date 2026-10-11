@@ -1,0 +1,77 @@
+\section{Lacunas}
+
+\begin{frame}{Lacunas}{Corpora Conversacionais}
+  \begin{block}{}
+    O fluxo de pesquisa de modelos -- do treinamento à avaliação -- de \textit{TTS}
+    conversacionais necessita de \textit{corpora} conversacionais abertos e
+    devidamente anotados.
+  \end{block}
+  \pause
+  \begin{block}{Escassez de Córpus}
+    Observa-se, mesmo no inglês, poucos conjuntos de dados com tais características
+    \cite{Lee_2023} \cite{Behavior-SD} \cite{Survey-ControllableSpeechSynthesis}.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Lacunas}{Corpora Conversacionais}
+  \begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{imgs/DialogueDatasetsSurvey.png}
+    \caption{Tabela que sumariza \textit{córpora} conversacionais para TTSs controláveis.
+    Fonte: \cite{Survey-ControllableSpeechSynthesis}.}
+    \label{fig:dialogue_datasets}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Lacunas}{Corpora Conversacionais}
+  \begin{block}{Escassez de Córpus}
+    \begin{itemize}
+      \item \customcite{Behavior-SD} \cite{Behavior-SD}.
+        \begin{itemize}
+          \item \textit{Behavior-SD}: córpus.
+        \end{itemize}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Lacunas}{Modelos de Síntese de Fala Conversacionais}
+  \begin{block}{}
+    \begin{itemize}
+      \item \customcite{CoVoMix_2024} \cite{CoVoMix_2024}.
+        \begin{itemize}
+          \item \textit{Turn-Taking}.
+          \item Comportamentos paralinguísticos.
+          \item Consistência
+        \end{itemize}
+      \item \customcite{Behavior-SD} \cite{Behavior-SD}.
+        \begin{itemize}
+          \item \textit{BeDLM}: \textit{Behavior-conditioned spoken Dialogue
+            Language Model}.
+        \end{itemize}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Lacunas}{Métricas para Avaliação de Diálogos Sintetizados}
+  \begin{block}{}
+    \begin{enumerate}
+      \item Poucas métricas para Avaliação de Diálogos Sintetizados.
+        \begin{itemize}
+          \item \customcite{prosody_eval_julio} \cite{prosody_eval_julio}
+          \item \customcite{Conv_Naturalness_Predictor} \cite{Conv_Naturalness_Predictor}
+          \item \customcite{Behavior-SD} \cite{Behavior-SD}
+          \item \customcite{Responsible_Evaluation} \cite{Responsible_Evaluation}
+        \end{itemize}
+      \item Dentre as métricas que existem, \textbf{não existe um consenso}.
+    \end{enumerate}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Lacunas}{Frameworks para Adaptação de Corpora Conversacionais}
+  \begin{block}{}
+    Ausência de um \textit{framework} consolidado para adaptação de conjuntos de dados:
+    \begin{itemize}
+      \item \customcite{nvidia_dataset_toolbox} \cite{nvidia_dataset_toolbox}
+    \end{itemize}
+  \end{block}
+\end{frame}
